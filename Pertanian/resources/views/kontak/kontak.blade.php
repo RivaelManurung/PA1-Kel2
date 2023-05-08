@@ -13,9 +13,9 @@
                 <img src="assets/img/members/M1.jpeg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://web.facebook.com/rivael.manroe"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/rivael_m/"><i class="bi bi-instagram"></i></a>
+                  <a href="www.linkedin.com/in/rivaelmanurung"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">

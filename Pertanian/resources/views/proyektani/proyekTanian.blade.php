@@ -1,5 +1,6 @@
-@include('Layouts.main')
-@include('Layouts.header')
+@extends('layouts.main')
+@include('layouts.header')
+
 <div class="blog-area single full-blog full-blog default-padding">
     <div class="container">
         <div class="blog-items">
@@ -8,14 +9,11 @@
                     <div class="item">
                         <div class="blog-item-box">
                             <div class="thumb">
-                                <img src="{{ asset('asset/gambar/' . $proyekTani->gambar) }}"
-                                    alt="{{ $proyekTani->judul }}" width="100%" height="350">
+                                <img src="{{ asset('asset/gambar/' . $proyekTani->gambar) }}" alt="{{ $proyekTani->judul }}" width="100%" height="350">
                             </div>
                             <div class="info">
                                 <h3>{{ $proyekTani->judul }}</h3>
-                                <p>
                                 <p>{!! $proyekTani->deskripsi !!}</p>
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -24,4 +22,5 @@
         </div>
     </div>
 </div>
-@include('Layouts.footer')
+
+@include('layouts.footer')

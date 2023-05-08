@@ -27,4 +27,4 @@
         </div>
     </div>
   <!-- end main -->
-  @include ('Layouts.footer')
+  @include ('Layouts.footer')   

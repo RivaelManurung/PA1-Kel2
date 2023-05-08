@@ -27,7 +27,7 @@
                     <div class="row">
                         <div class="container">
                             @if (Auth::User()->level == 'admin')
-                                <a class="btn circle btn-gray border btn-md btn"
+                                <a class="btn circle btn-gray border btn-md btn-tambah"
                                     href="{{ route('barang.create') }}">Tambah</a><br><br>
                             @endif
                             @foreach ($barang as $item)

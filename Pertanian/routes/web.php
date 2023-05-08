@@ -35,6 +35,7 @@ Route::controller(AuthController::class)->group(function () {
 	Route::resource('edukasi', EdukasiController::class);
 	Route::resource('/barang', BarangController::class);
     Route::resource('proyekTani', ProyekTaniController::class);
+	Route::get('/history',[HistoryController::class, 'index'])->name('history.index');
 	Route::patch('pinjam/{pinjam}/terima',[PinjamController::class,'terima'])->name('pinjam.terima');
     Route::patch('pinjam/{pinjam}/tolak',[PinjamController::class,'tolak'])->name('pinjam.tolak');
     Route::patch('pinjam/{pinjam}/denda',[PinjamController::class,'denda'])->name('pinjam.denda');
