@@ -15,7 +15,7 @@
         <div class="contact-items">
             <div class="row justify-content-center">
                 <div class="col-lg-5">
-                    <div class="form-content">
+                    <div class="form-content"><br><br>
                         <h2 class="text-center">Pinjam Disini</h2>
 
                         <form action="{{ route('pinjam.store') }}" method="POST">

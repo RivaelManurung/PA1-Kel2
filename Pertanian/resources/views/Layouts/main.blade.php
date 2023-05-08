@@ -31,7 +31,9 @@
 
     <!--  CSS File -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/style2.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/styl2.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/css2.css') }}" rel="stylesheet">
+
 
 
     {{-- css pinjaman barang --}}

@@ -26,7 +26,7 @@
                     <div class="row">
                         <div class="container">
                             @if (Auth::User()->level == 'admin')
-                                <a class="btn circle btn-gray border btn-md btn"
+                                <a class="btn circle btn-gray border btn-md btn btn-tambah"
                                     href="{{ route('proyekTani.create') }}">Tambah</a><br><br>
                             @endif
                             @foreach ($proyekTani as $item)
@@ -43,19 +43,19 @@
                                                     {!! Str::limit($item->deskripsi, 200) !!}
                                                 </p>
                                                 @if (Auth::User()->level == 'admin')
-                                                    <a class="btn circle btn-gray border btn-md"
+                                                    <a class="btn circle btn-gray border btn-md btn-edit"
                                                         href="{{ route('proyekTani.edit', $item->id) }}">Edit</a>
                                                     <form action="{{ route('proyekTani.destroy', $item->id) }}"
                                                         method="POST">
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit"
-                                                            class="btn circle btn-gray border btn-md">Hapus</button>
+                                                            class="btn circle btn-gray border btn-md btn-hapus">Hapus</button>
                                                     </form>
-                                                    <a class="btn circle btn-gray border btn-md"
+                                                    <a class="btn circle btn-gray border btn-md btn-selengkapnya"
                                                         href="{{ route('proyekTani.show', $item->id) }}">Selengkapnya</a>
                                                 @else
-                                                    <a class="btn circle btn-gray border btn-md"
+                                                    <a class="btn circle btn-gray border btn-md btn-selengkapnya"
                                                         href="{{ route('proyekTani.show', $item->id) }}">Selengkapnya</a>
                                                 @endif
                                             </div>
@@ -63,8 +63,10 @@
                                     </div>
                                 </div>
                             @endforeach
-                            <div class="text-center">
-                                {{ $proyekTani->links() }}
+                            <div class="d-flex">
+                                <div class="mx-auto">
+                                    {{$proyekTani->links("pagination::bootstrap-4")}}
+                                </div>
                             </div>
                         </div>
                     </div>

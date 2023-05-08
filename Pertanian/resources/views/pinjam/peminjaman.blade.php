@@ -61,9 +61,11 @@
         </tr>
         @endforeach
       </table>
-      <div class="text-center">
-        {{ $pinjam->links() }}
-      </div>
+      <div class="d-flex">
+        <div class="mx-auto">
+            {{$pinjam->links("pagination::bootstrap-4")}}
+        </div>
+    </div>
     </div>
     @else
     <section class="team-section">

@@ -49,14 +49,14 @@
                                                     <h5 class="card-title">{{ $item->jumlah }}</h5>
                                                 </div>
                                                 @if (Auth::User()->level == 'admin')
-                                                    <a class="btn circle btn-gray border btn-md"
+                                                    <a class="btn circle btn-gray border btn-md btn-edit"
                                                         href="{{ route('barang.edit', $item->id) }}">Edit</a>
                                                     <form action="{{ route('barang.destroy', $item->id) }}"
                                                         method="POST">
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit"
-                                                            class="btn circle btn-gray border btn-md">Hapus</button>
+                                                            class="btn circle btn-gray border btn-md btn-hapus">Hapus</button>
                                                     </form>
                                                 @else
                                                     <a class="btn circle btn-gray border btn-md"
@@ -67,10 +67,10 @@
                                     </div>
                                 </div>
                             @endforeach
-                            <div class="text-center ">
-                                <ul class="pagination d-inline-flex">
-                                    {{ $barang->links() }}
-                                </ul>
+                            <div class="d-flex">
+                                <div class="mx-auto">
+                                    {{$barang->links("pagination::bootstrap-4")}}
+                                </div>
                             </div>
 
                         </div>

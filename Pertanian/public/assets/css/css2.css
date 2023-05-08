@@ -1,0 +1,220 @@
+.blog-items {
+    background-color: #f5f5f5;
+    padding: 50px;
+  }
+  
+  .blog-item-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .abc {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-gray {
+    color: #fff;
+    background-color: #666;
+    border-color: #666;
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  
+  .btn-gray:hover {
+    background-color: #333;
+    border-color: #333;
+  }
+/* warna untuk button Edit */
+.btn-edit {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+/* warna untuk button Tambah */
+.btn-tambah {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+}
+
+/* warna untuk button Hapus */
+.btn-hapus {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+/* warna untuk button Selengkapnya */
+.btn-selengkapnya {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+/* styling untuk paginate */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    color: #6c757d;
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+  
+.blog-area table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .blog-area th, .blog-area td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+  }
+  
+  .blog-area th {
+    font-weight: bold;
+    background-color: #f2f2f2;
+  }
+  
+  .blog-area tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .blog-area tr:hover {
+    background-color: #ddd;
+  }
+  .btn-light-dark {
+    background-color: #e1fff4;
+    color: #444444;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .btn-light-dark:hover, .btn-light-dark:focus {
+    background-color: #e1fff4;
+    color: #444444;
+  }
+  
+  .img-profile {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 50%; 
+  }
+  
+  .dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 8px 0;
+    min-width: 150px;
+  }
+  
+  .dropdown-item {
+    padding: 6px 20px;
+    font-size: 14px;
+    color: #444444;
+  }
+  
+  .dropdown-item:hover, .dropdown-item:focus {
+    background-color: #DADADA;
+    color: #444444;
+  }
+  
+  .container-full {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  .contact-items {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .form-content h2 {
+    color: #333333;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .form-group label {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .form-control:focus {
+    border-color: #5cb85c;
+    box-shadow: none;
+  }
+  
+  .btn-primary {
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 25px;
+    text-transform: uppercase;
+  }
+  
+  .btn-primary:hover {
+    background-color: #4cae4c;
+  }
+  

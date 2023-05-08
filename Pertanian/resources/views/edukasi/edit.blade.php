@@ -7,7 +7,7 @@
 <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <div class="form-content">
+                <div class="form-content"><br><br><br><br><br>
                     <h2 class="text-center">Perbaharui Informasi Edukasi</h2>
                     <form action="{{ route('edukasi.update', $data->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
@@ -44,5 +44,6 @@
             </div>
         </div>
     </div>
+    
     <!-- end main -->
     @include ('Layouts.footer')
