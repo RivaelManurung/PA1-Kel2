@@ -6,6 +6,7 @@ use App\Http\Controllers\EdukasiController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\ProyekTaniController;
 use App\Http\Controllers\PinjamController;
+use App\Http\Controllers\HistoryController;
 
 
 

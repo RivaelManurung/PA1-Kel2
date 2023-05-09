@@ -217,4 +217,60 @@
   .btn-primary:hover {
     background-color: #4cae4c;
   }
-  
+  /* Style untuk elemen badge pada dropdown notifikasi */
+.badge.warning {
+  background-color: #ffc107;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  transform: translate(-50%, -50%);
+  padding: 4px 8px;
+  border-radius: 50%;
+}
+
+/* Style untuk dropdown notifikasi */
+.dropdown-menu1 {
+  width: 300px !important;
+}
+
+.ff {
+  font-size: 13px;
+  font-weight: 2px;
+  line-height: 1.5;
+}
+
+.anyClass {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+/* Style untuk dropdown menu pada elemen user */
+.dropdown-menu.cart-list {
+  padding: 10px;
+  width: 200px;
+}
+
+.dropdown-menu.cart-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.dropdown-menu.cart-list li h6 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.dropdown-menu.cart-list li button {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
