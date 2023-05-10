@@ -274,3 +274,98 @@
   margin-top: 10px;
   cursor: pointer;
 }
+/* Style untuk dropdown menu notifikasi */
+.dropdown-menu1 {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+}
+
+.ff {
+  font-family: Arial, sans-serif;
+}
+
+.ff:hover {
+  background-color: #f5f5f5;
+}
+
+/* Style untuk badge notifikasi */
+.badge.warning {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: #ff6961;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 5px;
+  border-radius: 50%;
+}
+
+/* Style untuk icon user */
+.bi.bi-person-circle {
+  font-size: 2rem;
+}
+
+/* Style untuk dropdown menu user */
+.dropdown-menu.cart-list {
+  font-size: 14px;
+  min-width: 200px;
+}
+
+.dropdown-menu.cart-list li {
+  padding: 10px;
+}
+
+.dropdown-menu.cart-list h6 {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.dropdown-menu.cart-list button {
+  margin-top: 10px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown-menu.cart-list button:hover {
+  background-color: #0069d9;
+}
+
+/* Style untuk tombol keluar */
+button {
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c82333;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  margin-top: 10px;
+  right: 0;
+  left: auto;
+  transform: translateX(-50%);
+}
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}

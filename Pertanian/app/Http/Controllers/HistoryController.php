@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Web;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -20,6 +20,6 @@ class HistoryController extends Controller
             ->orWhere('tanggal_pemulangan', 'like', '%' . $request->search . '%')
             ->orderBy('id', 'DESC')
             ->paginate(4);
-            return view('pages.web.history.list',compact('pinjam'));
+            return view('history.history',compact('pinjam'));
     }
 }
