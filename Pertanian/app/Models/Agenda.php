@@ -13,8 +13,9 @@ class Agenda extends Model
     public $timestamps = false;
     
     protected $fillable = [
-        'judul',
-        'gambar',
-        'deskripsi',
+        'kegiatan',
+        'tanggal',
+        'jam',
+        'tempat'
     ];
 }

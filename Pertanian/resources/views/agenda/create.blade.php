@@ -10,30 +10,39 @@
                     <form action="{{ route('agenda.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group row">
-                            <label for="judul" class="col-sm-2 col-form-label">Nama Topik</label>
+                            <label for="kegiatan" class="col-sm-2 col-form-label">Kegiatan</label>
                             <div class="col-sm-10">
-                                <input name="judul" type="text" class="form-control @error('judul') is-invalid @enderror" id="judul" placeholder="Namatopik" autocomplete="off">
+                                <input name="kegiatan" type="text" class="form-control @error('kegiatan') is-invalid @enderror" id="kegiatan" placeholder="Namatopik" autocomplete="off">
                             </div>
                         </div>
-                        @error('judul')
+                        @error('kegiatan')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                         <div class="form-group row">
-                            <label for="gambar" class="col-sm-2 col-form-label">Gambar</label>
+                            <label for="date" class="col-sm-2 col-form-label">Hari/Tanggal</label>
                             <div class="col-sm-10">
-                                <input type="file" class="form-control @error('gambar') is-invalid @enderror" id="gambar"name="gambar">  
+                                <input type="date" class="form-control @error('tanggal') is-invalid @enderror" id="Date"name="Date">  
                             </div>                                                         
                         </div>
-                        @error('gambar')
+                        @error('tanggal')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                         <div class="form-group row">
-                            <label for="summernote" class="col-sm-2 col-form-label">Deskripsi</label>
+                            <label for="summernote" class="col-sm-2 col-form-label">Pukul</label>
                             <div class="col-sm-10">
-                                <textarea name="deskripsi" class="form-control @error('deskripsi') is-invalid @enderror" id="summernote" placeholder="Deskripsi" rows="15"></textarea>
+                                <input name="judul" type="time" class="form-control @error('jam') is-invalid @enderror" id="jam" placeholder="jam" autocomplete="off">
                             </div>
                         </div>
-                        @error('deskripsi')
+                        @error('jam')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                        @enderror
+                        <div class="form-group row">
+                            <label for="judul" class="col-sm-2 col-form-label">tempat</label>
+                            <div class="col-sm-10">
+                                <input name="jam" type="text" class="form-control @error('tempat') is-invalid @enderror" id="tempat" placeholder="tempat" autocomplete="off">
+                            </div>
+                        </div>
+                        @error('tempat')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                         <div class="row justify-content-center my-5">

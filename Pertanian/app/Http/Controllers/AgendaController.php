@@ -22,7 +22,7 @@ class AgendaController extends Controller
      public function index(Request $request)
      {
          $search = $request->search;
-         $agenda = agenda::where('judul', 'like', '%' . $request->search . '%')
+         $agenda = agenda::where('kegiatan', 'like', '%' . $request->search . '%')
          ->orderBy('id', 'DESC')
          ->paginate(3);
          return view('agenda.agenda',compact('agenda'));
@@ -47,20 +47,23 @@ class AgendaController extends Controller
      public function store(Request $request)
      {
          $request->validate([
-             'judul' => 'required',
-             'gambar' => 'required|image|mimes:jpg,png,jpeg,gif,svg',
-             'deskripsi' => 'required'
+             'kegiatan' => 'required',
+             'tanggal' => 'required',
+             'jam' => 'required',
+             'tempat' => 'required'
          ]);
-         $file = $request->file('gambar');
+         $file = $request->file('tanggal');
          $namaFile = $file->getClientOriginalName();
-         $tujuanFile = 'asset/gambar';
+         $tujuanFile = 'asset/tanggal';
  
          $file->move($tujuanFile, $namaFile);
  
          $agenda=new agenda;
-         $agenda->judul= $request->judul;
-         $agenda->gambar= $namaFile;
-         $agenda->deskripsi= $request->deskripsi;
+         $agenda->kegiatan= $request->kegiatan;
+         $agenda->tanggal= $request->tanggal;
+         $agenda->jam= $request->jam;
+         $agenda->tempat= $request->tempat;
+
          $agenda->save();
          return redirect('agenda')->with('success', 'agenda berhasil ditambahkan');
        
@@ -98,26 +101,31 @@ class AgendaController extends Controller
      public function update(Request $request, $agenda)
      {
          $request->validate([
-             'judul' =>'required',
-             'deskripsi' =>'required',
-             'gambar' =>'image|mimes:jpg,png,jpeg,gif,svg'
+             'kegiatan' => 'required',
+             'tanggal' => 'required',
+             'jam' => 'required',
+             'tempat' => 'required'
          ]);
-         if($request->hasfile('gambar')){
-             $file = $request->file('gambar');
+         if($request->hasfile('tanggal')){
+             $file = $request->file('tanggal');
              $namaFile = $file->getClientOriginalName();
-             $tujuanFile = 'asset/gambar';
+             $tujuanFile = 'asset/tanggal';
      
              $file->move($tujuanFile, $namaFile);
      
-             agenda::where('id',$agenda)->update([
-                 'judul' => $request->judul,
-                 'gambar' =>  $namaFile,
-                 'deskripsi' =>  $request->deskripsi
-             ]);
+             agenda::where('id', $agenda)->update([
+                'kegiatan' => $request->kegiatan,
+                'tanggal' => $request->tanggal,
+                'jam' => $request->jam,
+                'tempat' => $request->tempat,
+            ]);
+            
          }else{
              agenda::where('id',$agenda)->update([
-                 'judul' => $request->judul,
-                 'deskripsi' =>  $request->deskripsi
+                'kegiatan' => $request->kegiatan,
+                'tanggal' => $request->tanggal,
+                'jam' => $request->jam,
+                'tempat' => $request->tempat,
              ]);
          }
  
