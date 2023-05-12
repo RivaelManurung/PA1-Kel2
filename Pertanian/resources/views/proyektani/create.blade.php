@@ -3,9 +3,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-10">
-            <div class="form-content"><br><br><br>
+            <div class="form-content"><br><br><br><br>
                 <h2 class="text-center">Tambah Informasi Proyek Tani</h2>
-                <form action="{{ route('ProyekTani.store') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('proyekTani.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group row">
                         <label for="judul" class="col-sm-2 col-form-label">Nama Topik</label>

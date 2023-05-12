@@ -7,6 +7,7 @@ use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\ProyekTaniController;
 use App\Http\Controllers\PinjamController;
 use App\Http\Controllers\HistoryController;
+use App\Http\Controllers\AgendaController;
 
 
 
@@ -35,6 +36,8 @@ Route::controller(AuthController::class)->group(function () {
 	Route::get('/kontak',[BerandaController::class,'kontak'])->name('kontak');
 	Route::resource('edukasi', EdukasiController::class);
 	Route::resource('/barang', BarangController::class);
+	Route::resource('agenda', AgendaController::class);
+	Route::resource('agenda', AgendaController::class);
     Route::resource('proyekTani', ProyekTaniController::class);
 	Route::get('/history',[HistoryController::class, 'index'])->name('history.index');
 	Route::patch('pinjam/{pinjam}/terima',[PinjamController::class,'terima'])->name('pinjam.terima');

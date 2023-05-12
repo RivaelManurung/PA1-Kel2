@@ -11,6 +11,7 @@
                 @if (Auth::user()->level == 'admin')
                     <li><a href="{{ url('/pinjam') }}">Peminjaman</a></li>
                 @endif
+                <li><a href="{{ route('agenda.index') }}">Agenda</a></li>
                 <li><a href="{{ route('proyekTani.index') }}">Proyek Tani</a></li>
                 <li><a href="{{ route('kontak') }}">Kontak</a></li>
             </ul>

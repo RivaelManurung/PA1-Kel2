@@ -8,20 +8,29 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
+     * @return void
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('agenda', function (Blueprint $table) {
             $table->id();
+            $table->string('judul');
+            $table->string('gambar');
+            $table->longText('deskripsi');
             $table->timestamps();
+
         });
     }
 
     /**
      * Reverse the migrations.
+     *
+     * @return void
      */
-    public function down(): void
+    public function down()
     {
+
         Schema::dropIfExists('agenda');
     }
 };
