@@ -30,15 +30,17 @@
                             @foreach ($agenda as $item)
                                 <div class="card mb-3">
                                     <div class="row ">
-                                        <div class="col-md-5">
-                                            <img src="{{ asset('asset/gambar/' . $item->gambar) }}"
-                                                alt="{{ $item->judul }}" width="100%" height="100%">
-                                        </div>
                                         <div class="col-md-7">
                                             <div class="card-body">
-                                                <h5 class="card-title">{{ $item->judul }}</h5>
+                                                <h5 class="card-title">{{ $item->kegiatan }}</h5>
                                                 <div class="abc card-text">
-                                                    {!! Str::limit($item->deskripsi, 200) !!}
+                                                    {!! Str::limit($item->tanggal, 200) !!}
+                                                </div>
+                                                <div class="abc card-text">
+                                                    {!! Str::limit($item->jam, 200) !!}
+                                                </div>
+                                                <div class="abc card-text">
+                                                    {!! Str::limit($item->tempat, 200) !!}
                                                 </div>
                                                 <div>
                                                     @if (Auth::User()->level == 'admin')

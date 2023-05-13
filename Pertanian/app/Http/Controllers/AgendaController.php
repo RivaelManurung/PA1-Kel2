@@ -52,12 +52,7 @@ class AgendaController extends Controller
              'jam' => 'required',
              'tempat' => 'required'
          ]);
-         $file = $request->file('tanggal');
-         $namaFile = $file->getClientOriginalName();
-         $tujuanFile = 'asset/tanggal';
- 
-         $file->move($tujuanFile, $namaFile);
- 
+
          $agenda=new agenda;
          $agenda->kegiatan= $request->kegiatan;
          $agenda->tanggal= $request->tanggal;

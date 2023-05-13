@@ -86,7 +86,7 @@ class PinjamController extends Controller
     public function show($id)
     {
         $barang = Barang::where('id',$id)->first();
-        return view('pinjam.pinjaman',compact('barang'));
+        return view('barang.pinjaman',compact('barang'));
     }
 
     /**

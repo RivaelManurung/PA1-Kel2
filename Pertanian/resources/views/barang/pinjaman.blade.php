@@ -1,5 +1,6 @@
 @include('Layouts.main')
 @include('Layouts.header')
+
 <!-- main -->
 
 <div class="contact-area default-padding">

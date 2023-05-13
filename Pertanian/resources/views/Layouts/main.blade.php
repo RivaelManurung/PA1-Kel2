@@ -6,8 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Sitani</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+
 
     <!-- Favicons -->
     <link href="  {{ asset('assets/img/SiTani.png') }}" rel="icon">
