@@ -10,13 +10,16 @@
                     <div class="blog-content wow fadeInUp col-lg-10 offset-lg-1 col-md-12">
                         <div class="item">
                             <div class="blog-item-box">
-                                <div class="thumb">
-                                    <img src="{{ asset('asset/gambar/'.$agenda->gambar) }}" alt="{{ $agenda->judul }}" width="100%" height="350">
-                                </div>
                                 <div class="info">
-                                    <h3>{{ $agenda->judul }}</h3>
+                                    <h3>kegiatan: {{ $agenda->kegiatan }}</h3>
                                     <p>
-                                        <p>{!! $agenda->deskripsi !!}</p>                                         
+                                        <p>pukul: {!! $agenda->jam !!}</p>                                         
+                                    </p>
+                                    <p>
+                                        <p>Tanggal: {!! $agenda->tanggal !!}</p>                                         
+                                    </p>
+                                    <p>
+                                        <p>Lokasi: {!! $agenda->tempat !!}</p>                                         
                                     </p>
                                 </div>
                             </div>

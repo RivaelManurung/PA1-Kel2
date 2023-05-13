@@ -2,30 +2,30 @@
     background-color: #f5f5f5;
     padding: 50px;
   }
-  
+
   .blog-item-box {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
   }
-  
+
   .card {
     margin-bottom: 20px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   }
-  
+
   .card-title {
     font-size: 24px;
     margin-bottom: 10px;
   }
-  
+
   .abc {
     color: #333;
     font-size: 18px;
     margin-bottom: 20px;
   }
-  
+
   .btn-gray {
     color: #fff;
     background-color: #666;
@@ -33,36 +33,15 @@
     padding: 10px 20px;
     margin-right: 10px;
   }
-  
+
   .btn-gray:hover {
     background-color: #333;
     border-color: #333;
   }
-/* warna untuk button Edit */
-.btn-edit {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: #fff;
-}
-
 /* warna untuk button Tambah */
 .btn-tambah {
     background-color: #28a745;
     border-color: #28a745;
-    color: #fff;
-}
-
-/* warna untuk button Hapus */
-.btn-hapus {
-    background-color: #dc3545;
-    border-color: #dc3545;
-    color: #fff;
-}
-
-/* warna untuk button Selengkapnya */
-.btn-selengkapnya {
-    background-color: #6c757d;
-    border-color: #6c757d;
     color: #fff;
 }
 
@@ -94,28 +73,28 @@
     background-color: #6c757d;
     border-color: #6c757d;
 }
-  
+
 .blog-area table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
     margin-bottom: 30px;
   }
-  
+
   .blog-area th, .blog-area td {
     padding: 12px;
     border: 1px solid #dddddd;
   }
-  
+
   .blog-area th {
     font-weight: bold;
     background-color: #f2f2f2;
   }
-  
+
   .blog-area tr:nth-child(even) {
     background-color: #f2f2f2;
   }
-  
+
   .blog-area tr:hover {
     background-color: #ddd;
   }
@@ -128,50 +107,50 @@
     font-size: 14px;
     font-weight: bold;
   }
-  
+
   .btn-light-dark:hover, .btn-light-dark:focus {
     background-color: #e1fff4;
     color: #444444;
   }
-  
+
   .img-profile {
     width: 40px;
     height: 40px;
     object-fit: cover;
     margin-right: 8px;
-    border-radius: 50%; 
+    border-radius: 50%;
   }
-  
+
   .dropdown-menu {
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     padding: 8px 0;
     min-width: 150px;
   }
-  
+
   .dropdown-item {
     padding: 6px 20px;
     font-size: 14px;
     color: #444444;
   }
-  
+
   .dropdown-item:hover, .dropdown-item:focus {
     background-color: #DADADA;
     color: #444444;
   }
-  
+
   .container-full {
     background-color: #f7f7f7;
     padding: 50px 0;
   }
-  
+
   .contact-items {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
   }
-  
+
   .form-content h2 {
     color: #333333;
     font-size: 30px;
@@ -179,14 +158,14 @@
     margin-bottom: 30px;
     text-align: center;
   }
-  
+
   .form-group label {
     color: #333333;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
   }
-  
+
   .form-control {
     border-radius: 5px;
     border: 1px solid #dddddd;
@@ -197,12 +176,12 @@
     margin-bottom: 20px;
     width: 100%;
   }
-  
+
   .form-control:focus {
     border-color: #5cb85c;
     box-shadow: none;
   }
-  
+
   .btn-primary {
     background-color: #5cb85c;
     border: none;
@@ -213,7 +192,7 @@
     padding: 10px 25px;
     text-transform: uppercase;
   }
-  
+
   .btn-primary:hover {
     background-color: #4cae4c;
   }
@@ -368,4 +347,60 @@ button:hover {
 .navbar-nav {
   display: flex;
   justify-content: center;
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-text p {
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-edit {
+  background-color: #28a745;
+  color: #fff;
+  border-color: #28a745;
+}
+
+.btn-edit:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+
+.btn-hapus {
+  background-color: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}
+
+.btn-hapus:hover {
+  background-color: #c82333;
+  border-color: #c82333;
+}
+
+.btn-selengkapnya {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.btn-selengkapnya:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
 }

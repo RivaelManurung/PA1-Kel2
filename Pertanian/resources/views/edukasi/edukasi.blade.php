@@ -4,7 +4,7 @@
 <div class="blog-area full-blog blog-standard full-blog grid-colum default-padding">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="my-5">
+            <div class="my-5"><br><br>
                 <div class="error-box">
                     <div class="search">
                         <div class="input-group">

@@ -4,7 +4,7 @@
 <div class="blog-area full-blog blog-standard full-blog grid-colum default-padding">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="my-5">
+            <div class="my-5"><br><br><br>
                 <div class="error-box">
                     <div class="search">
                         <div class="input-group">
@@ -32,15 +32,18 @@
                                     <div class="row ">
                                         <div class="col-md-7">
                                             <div class="card-body">
-                                                <h5 class="card-title">{{ $item->kegiatan }}</h5>
+                                                <h5 class="card-title"> kegiatan: {{ $item->kegiatan }}</h5>
                                                 <div class="abc card-text">
-                                                    {!! Str::limit($item->tanggal, 200) !!}
+                                                    <p>Tanggal:
+                                                    {!! Str::limit($item->tanggal, 200) !!}</p>
                                                 </div>
                                                 <div class="abc card-text">
-                                                    {!! Str::limit($item->jam, 200) !!}
+                                                    <p>Pukul:
+                                                    {!! Str::limit($item->jam, 200) !!}</p>
                                                 </div>
                                                 <div class="abc card-text">
-                                                    {!! Str::limit($item->tempat, 200) !!}
+                                                    <p>Lokasi:
+                                                    {!! Str::limit($item->tempat, 200) !!}</p>
                                                 </div>
                                                 <div>
                                                     @if (Auth::User()->level == 'admin')

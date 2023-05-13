@@ -31,9 +31,9 @@
                 <img src="assets/img/members/M2.jpeg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://web.facebook.com/kerens.simanjuntaks/"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/keren_smjtk/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/keren-simanjuntak-36462b25a/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -49,9 +49,9 @@
                 <img src="assets/img/members/M3.jpeg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.facebook.com/monslbn"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/monica.slbn/?next=%2F"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/monica-silaban-7b257b26b/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -67,9 +67,9 @@
                 <img src="assets/img/members/M4.jpeg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.facebook.com/adinda.hutasoit.3"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/adindaa_h02/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/adinda-hutasoit-ab5a06275/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -85,6 +85,6 @@
     </section><!-- End Members Section -->
 
   </main>
-  
+
   <!-- End #main -->
   @include ('Layouts.footer')

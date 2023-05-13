@@ -3,16 +3,13 @@
 {{-- main --}}
 
 <div class="row justify-content-center">
-    <div class="my-5">
+    <div class="my-5"><br><br>
         <div class="error-box">
             <div class="search">
                 <div class="input-group">
                     <form action="#">
                         <input type="text" placeholder="Search" class="form-control" name="search" autocomplete="off"
                             value="{{ request()->search }}">
-                        <button type="submit">
-                            <i class="fas fa-search"></i>
-                        </button>
                     </form>
                 </div>
             </div>
