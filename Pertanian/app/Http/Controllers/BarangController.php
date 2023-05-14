@@ -57,7 +57,7 @@ class BarangController extends Controller
         $barang->nama= $request->nama;
         $barang->jumlah= $request->jumlah;
         $barang->gambar= $namaFile;
-        
+
         // dd($request->all());
         $barang->save();
         return redirect('barang')->with('success', 'Barang berhasil ditambahkan');
@@ -103,9 +103,9 @@ class BarangController extends Controller
             $file = $request->file('gambar');
             $namaFile = $file->getClientOriginalName();
             $tujuanFile = 'asset/gambar';
-    
+
             $file->move($tujuanFile, $namaFile);
-    
+
             Barang::where('id',$barang)->update([
                 'nama' => $request->nama,
                 'jumlah' => $request->jumlah,

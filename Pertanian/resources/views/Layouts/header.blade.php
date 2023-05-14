@@ -12,6 +12,7 @@
                     <li><a href="{{ url('/pinjam') }}">Peminjaman</a></li>
                 @endif
                 <li><a href="{{ route('agenda.index') }}">Agenda</a></li>
+                <li><a href="{{ route('album.index') }}">Album</a></li>
                 <li><a href="{{ route('proyekTani.index') }}">Proyek Tani</a></li>
                 <li><a href="{{ route('kontak') }}">Kontak</a></li>
             </ul>
