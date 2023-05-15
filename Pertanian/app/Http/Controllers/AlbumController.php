@@ -12,10 +12,13 @@ class AlbumController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $albums = Album::all();
-        return view('albums.index', compact('albums'));
+        $search = $request->search;
+        $album = Album::where('judul', 'like', '%' . $request->search . '%')
+        ->orderBy('id', 'DESC')
+        ->paginate(3);
+        return view('album.album', compact('album'));
     }
 
     /**
@@ -25,7 +28,7 @@ class AlbumController extends Controller
      */
     public function create()
     {
-        return view('albums.create');
+        return view('album.create');
     }
 
     /**
@@ -36,23 +39,35 @@ class AlbumController extends Controller
      */
     public function store(Request $request)
     {
-        Album::create([
-            'title' => $request->title
+        $request->validate([
+            'judul' => 'required',
+            'gambar' => 'required|image|mimes:jpg,png,jpeg,gif,svg',
         ]);
-        return redirect()->route('albums.index');
+        $file = $request->file('gambar');
+        $namaFile = $file->getClientOriginalName();
+        $tujuanFile = 'asset/album';
+
+        $file->move($tujuanFile, $namaFile);
+
+        $album=new Album;
+        $album->judul= $request->judul;
+        $album->gambar= $namaFile;
+        $album->save();
+        return redirect('album')->with('success', 'album berhasil ditambahkan');
+      
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Album  $album
      * @return \Illuminate\Http\Response
      */
     public function show(Album $album)
     {
-        $photos = $album->getMedia();
-        return view('albums.show', compact('album', 'photos'));
+        return view('album.albuman',compact('album'));
     }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -62,59 +77,51 @@ class AlbumController extends Controller
      */
     public function edit(Album $album)
     {
-        return view('albums.edit', compact('album'));
+        return view('album.edit',['data'=>$album]);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Album  $album
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Album $album)
+    public function update(Request $request, $album)
     {
-        $album->update([
-            'title' => $request->title
+        $request->validate([
+            'judul' =>'required',
+            'gambar' =>'image|mimes:jpg,png,jpeg,gif,svg'
         ]);
-        return redirect()->route('albums.index');
+        if($request->hasfile('gambar')){
+            $file = $request->file('gambar');
+            $namaFile = $file->getClientOriginalName();
+            $tujuanFile = 'asset/album';
+    
+            $file->move($tujuanFile, $namaFile);
+    
+            Album::where('id',$album)->update([
+                'judul' => $request->judul,
+                'gambar' =>  $namaFile,
+            ]);
+        }else{
+            Album::where('id',$album)->update([
+                'judul' => $request->judul,
+            ]);
+        }
+
+        return redirect("album")->with('status','album berhasil diubah');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Album  $album
      * @return \Illuminate\Http\Response
      */
     public function destroy(Album $album)
     {
         $album->delete();
-
-        return redirect()->back();
+        return redirect('album')->with('success', 'album berhasil dihapus');
     }
 
-    public function upload(Request $request, Album $album)
-    {
-        if ($request->has('image')) {
-            $album->addMedia($request->image)->toMediaCollection();
-        }
-        return redirect()->back();
-    }
-
-    public function showImage(Album $album, $id)
-    {
-        $media = $album->getMedia();
-        $image = $media->where('id', $id)->first();
-        
-        return view('albums.image-show', compact('album', 'image'));
-    }
-
-    public function destroyImage(Album $album, $id)
-    {
-        $media = $album->getMedia();
-        $image = $media->where('id', $id)->first();
-        $image->delete();
-
-        return redirect()->back();
-    }
 }
