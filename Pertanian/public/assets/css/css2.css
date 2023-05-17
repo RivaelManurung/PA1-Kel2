@@ -404,3 +404,7 @@ button:hover {
   background-color: #0069d9;
   border-color: #0062cc;
 }
+
+ul {
+  list-style-type: none;
+}
