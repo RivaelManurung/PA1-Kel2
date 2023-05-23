@@ -18,55 +18,59 @@
             </div>
         </div>
 
-
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="container">
-                @if (Auth::User()->level == 'admin')
-                  <a class="btn btn-primary btn-md btn-tambah" href="{{ route('album.create') }}">Tambah</a>
-                @endif
-                @foreach ($album as $item)
-                  <div class="mt-4 mb-4">
-                    <div class="row row-cols-4 g-2 md:g-4">
-                      <img src="{{ asset('asset/album/' . $item->gambar) }}" alt="{{ $item->judul }}" width="100%" height="100%">
-                      <div class="col">
-                        <div class="card-body">
-                          <div>
+        <div class="blog-items">
+            <div class="blog-content">
+                <div class="blog-item-box">
+                    <div class="row">
+                        <div class="container">
                             @if (Auth::User()->level == 'admin')
-                              <a class="btn btn-primary btn-md btn-edit" href="{{ route('album.edit', $item->id) }}">Edit</a>
-                              <form action="{{ route('album.destroy', $item->id) }}" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger btn-md btn-hapus">Hapus</button>
-                              </form>
-                              <a class="btn btn-primary btn-md btn-selengkapnya" href="{{ route('album.show', $item->id) }}">Selengkapnya</a>
-                            @else
-                              <a class="btn btn-primary btn-md btn-selengkapnya" href="{{ route('album.show', $item->id) }}">Selengkapnya</a>
+                                <a class="btn btn-gray border btn-md btn btn-tambah"
+                                    href="{{ route('album.create') }}">Tambah</a><br><br>
                             @endif
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                @endforeach
-              </div>
-            </div>
-          </div>
-          
-                    <div class="d-flex">
-                        <div class="mx-auto">
-                            {{ $album->links('pagination::bootstrap-4') }}
-                        </div>
-                    </div>
+                            @foreach ($album as $item)
+                                <div class="card mb-3">
+                                    <div class="row ">
+                                        <div class="col-md-5">
+                                            <img src="{{ asset('asset/album/' . $item->gambar) }}"
+                                                alt="{{ $item->judul }}" width="100%" height="100%">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <div>
+                                                    @if (Auth::User()->level == 'admin')
+                                                        <a class="btn btn-gray border btn-md btn-edit"
+                                                            href="{{ route('album.edit', $item->id) }}">Edit</a>
+                                                        <form action="{{ route('album.destroy', $item->id) }}"
+                                                            method="POST">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button type="submit"
+                                                                class="btn btn-gray border btn-md btn-hapus">Hapus</button>
+                                                        </form>
+                                                        <a class="btn btn-gray border btn-md btn-selengkapnya"
+                                                            href="{{ route('album.show', $item->id) }}">Selengkapnya</a>
+                                                    @else
+                                                        <a class="btn btn-gray border btn-md btn-selengkapnya"
+                                                            href="{{ route('album.show', $item->id) }}">Selengkapnya</a>
+                                                    @endif
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                            <div class="d-flex">
+                                <div class="mx-auto">
+                                    {{$album->links("pagination::bootstrap-4")}}
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-</div>
-</div>
 </div>
 
 <!-- End #main -->
