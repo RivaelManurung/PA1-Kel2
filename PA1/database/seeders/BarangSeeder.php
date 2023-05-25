@@ -18,12 +18,12 @@ class BarangSeeder extends Seeder
             [
                 'nama' => 'Cangkul', 
                 'jumlah' => '10',
-                'gambar' => 'barang/cangkul.jpg',
+                'gambar' => 'cangkul.jpg', 
             ],
             [
                 'nama' => 'Cangkul garpu', 
                 'jumlah' => '10',
-                'gambar' => 'barang/cangkul garpu.jpg',
+                'gambar' => 'cangkul garpu.jpg',
             ],
             [
                 'nama' => 'kultivator', 

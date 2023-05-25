@@ -2,12 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Carbon;
 use App\Models\User;
-use Illuminate\Support\Facades\Date;
 
 class DatabaseSeeder extends Seeder
 {
@@ -43,6 +40,10 @@ class DatabaseSeeder extends Seeder
         }
         $this->call(EdukasiSeeder::class);
         $this->call(ProyekTaniSeeder::class);
+        $this->call(AgendaSeeder::class);
+        $this->call(BarangSeeder::class);
+
+
     }
 
 

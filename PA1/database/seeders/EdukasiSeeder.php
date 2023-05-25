@@ -15,7 +15,7 @@ class EdukasiSeeder extends Seeder
         $data = array(
             [
                 'judul' => '1.	Pengenalan Pertanian', 
-                'gambar' => 'Edukasi1.jpeg',
+                'gambar' => 'Pengenalan Pertania.jpeg',
                 'deskripsi' => 'Pertanian telah menjadi bagian integral dari kehidupan manusia selama ribuan tahun. Seiring waktu, praktik pertanian telah mengalami perkembangan signifikan, mulai dari metode tradisional hingga teknologi modern yang digunakan saat ini. Bagian Pengenalan Pertanian dalam website ini menyajikan gambaran umum mengenai pertanian, mencakup berbagai topik penting seperti sejarah, perkembangan, dan peran yang dimainkan dalam masyarakat.
                 a.	Sejarah 
                 pertanian melibatkan evolusi cara manusia memanfaatkan tanah dan sumber daya alam untuk memenuhi kebutuhan pangan. Dari revolusi pertanian di Mesir Kuno hingga revolusi hijau pada abad ke-20, pertanian telah mengalami perubahan signifikan dalam hal teknologi, pengelolaan lahan, dan pemuliaan tanaman. Informasi sejarah ini membantu kita memahami bagaimana manusia telah beradaptasi dan mengembangkan metode pertanian yang lebih efisien seiring berjalannya waktu.
@@ -27,7 +27,7 @@ class EdukasiSeeder extends Seeder
             ],
             [
                 'judul' => '2. Teknik Bertani', 
-                'gambar' => 'Edukasi2.jpg',
+                'gambar' => 'Teknik Bertani.jpg',
                 'deskripsi' => 'Teknik Bertani merupakan bagian dari edukasi pertanian yang perlu diketahui. Ada berbagai teknik bertani modern yang dapat diterapkan dalam praktik pertanian saat ini. Bagian ini mencakup tiga teknik bertani yang populer yaitu pertanian organik, hidroponik, dan pertanian vertikal. Setiap teknik memiliki langkah-langkah yang spesifik, manfaat yang berbeda, dan cara implementasi yang unik.
                 a. Pertanian Organik: 
                 Pertanian organik adalah pendekatan bertani yang menggunakan bahan-bahan alami dan menghindari penggunaan pestisida dan pupuk kimia sintetis. Langkah-langkah dalam pertanian organik meliputi:
@@ -48,7 +48,7 @@ class EdukasiSeeder extends Seeder
             ],
             [
                 'judul' => '3. Pemilihan Tanaman', 
-                'gambar' => 'Edukasi3.jpg',
+                'gambar' => 'Pemilihan Tanaman.jpg',
                 'deskripsi' => 'Pemilihan tanaman yang tepat sangat penting dalam praktik pertanian. Tanaman yang dipilih dengan bijak dapat beradaptasi dengan lingkungan tumbuhnya, termasuk iklim, jenis tanah, dan kondisi yang ada. Dengan memilih tanaman yang sesuai, kita dapat meningkatkan pertumbuhan dan produktivitas mereka. Selain itu, pemilihan tanaman yang tepat juga dapat mengoptimalkan penggunaan sumber daya seperti air, energi, dan pupuk, sehingga meningkatkan efisiensi produksi. Melalui keanekaragaman tanaman, kita dapat memperkuat keberlanjutan ekosistem pertanian dan mengurangi risiko serangan hama dan penyakit. Selain itu, mempertimbangkan permintaan pasar saat memilih tanaman dapat membuka peluang ekonomi yang lebih baik bagi petani. Dengan demikian, pemilihan tanaman yang tepat berkontribusi pada keberhasilan jangka panjang dalam pertanian, baik dari segi produktivitas, keberlanjutan, maupun keuntungan ekonomi.
                 Hal-hal yang lain yang perlu kita ketahui adalah:
                 a. Karakteristik Tanaman 
@@ -60,7 +60,7 @@ class EdukasiSeeder extends Seeder
             ],
             [
                 'judul' => '4. Pemupukan dan Pengendalian Hama', 
-                'gambar' => 'Edukasi4.jpg',
+                'gambar' => 'Pemupukan dan Pengendalian Hama.jpg',
                 'deskripsi' => '•	Pemupukan yang Tepat: 
                 Pemupukan yang tepat sangat penting untuk memastikan pertumbuhan dan produktivitas tanaman yang optimal. Pengetahuan tentang kebutuhan nutrisi tanaman dan kandungan nutrisi dalam tanah menjadi dasar dalam melakukan pemupukan yang efektif. Berbagai jenis nutrisi, seperti nitrogen (N), fosfor (P), dan kalium (K), diperlukan oleh tanaman dalam jumlah yang berbeda-beda. Pemilihan pupuk yang sesuai, baik pupuk organik maupun pupuk anorganik, akan membantu memenuhi kebutuhan nutrisi tanaman. Pemupukan juga perlu dilakukan pada waktu yang tepat, dengan memperhatikan fase pertumbuhan tanaman.
                 •	Pengendalian Hama dan Penyakit: 
@@ -70,7 +70,7 @@ class EdukasiSeeder extends Seeder
                       ],
             [
                 'judul' => '5. Irigasi dan Pengelolaan Air', 
-                'gambar' => 'Edukasi5.jpg',
+                'gambar' => 'Irigasi dan Pengelolaan Air.jpg',
                 'deskripsi' => 'Ada beberapa aspek lain yang perlu kita perhatikan dalam pengelolaan pertanian diantaranya :
                 a.	Pentingnya Irigasi yang Efisien
                 Irigasi yang efisien memainkan peran kunci dalam pertanian modern. Pertanian yang berhasil membutuhkan pasokan air yang cukup untuk tanaman, terutama di daerah yang mengalami kekurangan air atau musim kering. Irigasi yang efisien memungkinkan petani untuk memberikan air dengan tepat pada waktu yang tepat, dengan jumlah yang sesuai, dan di tempat yang tepat. Ini membantu memastikan pertumbuhan tanaman yang sehat, peningkatan produktivitas, dan penggunaan sumber daya air yang berkelanjutan.
@@ -88,7 +88,7 @@ class EdukasiSeeder extends Seeder
             ],
             [
                 'judul' => '6.	Cara Pemanenan beserta Pasca Panen Bawang Merah', 
-                'gambar' => 'Edukasi6.jpeg',
+                'gambar' => 'Perubahan Iklim dan Pertanian.jpeg',
                 'deskripsi' => 'Dampak perubahan iklim terhadap sektor pertanian dan cara menghadapinya. Dalam konteks ini, perubahan iklim merujuk pada perubahan jangka panjang dalam pola cuaca dan kondisi atmosfer global sebagai hasil dari aktivitas manusia, terutama emisi gas rumah kaca.
                 a.	Dampak Perubahan Iklim terhadap Pertanian
                 Perubahan iklim memiliki dampak yang signifikan terhadap pertanian. Beberapa dampak tersebut meliputi:
@@ -106,7 +106,7 @@ class EdukasiSeeder extends Seeder
                 ],
             [
                 'judul' => '7.	Pasar Pertanian dan Pemasaran', 
-                'gambar' => 'Edukasi6.jpeg',
+                'gambar' => 'Pasar Pertanian dan Pemasaran.jpeg',
                 'deskripsi' => 'Pasar Pertanian dan Pemasaran adalah tentang cara menjual produk pertanian kepada orang-orang yang ingin membelinya. Ini penting karena petani ingin memastikan produk pertanian mereka dapat ditemukan dan dibeli oleh konsumen. Strategi Pemasaran Produk Pertanian adalah cara untuk membuat orang tahu tentang produk pertanian yang dijual dan mengapa mereka harus memilih produk tersebut. Beberapa strategi yang digunakan adalah:
                 •	Membangun merek: Ini berarti memberikan identitas khusus pada produk, seperti nama, logo, atau kemasan yang unik, agar orang bisa mengenali produk tersebut.
                 •	Menggunakan media sosial dan internet: Petani dapat memanfaatkan teknologi seperti Facebook, Instagram, atau situs web untuk mempromosikan produk mereka dan berinteraksi dengan konsumen potensial.
@@ -122,7 +122,7 @@ class EdukasiSeeder extends Seeder
             ],
             [
                 'judul' => '8.	Konservasi Tanah', 
-                'gambar' => 'Edukasi6.jpeg',
+                'gambar' => 'Konservasi Tana.jpeg',
                 'deskripsi' => 'Konservasi Tanah adalah suatu upaya untuk menjaga dan memelihara kualitas tanah dalam konteks pertanian. Ini sangat penting karena tanah yang sehat dan subur adalah aset berharga bagi petani dan untuk keberlanjutan produksi pangan. Berikut adalah penjelasan mengenai pentingnya konservasi tanah dan panduan tentang cara mengurangi erosi tanah, pemulihan lahan terdegradasi, dan pengelolaan keberlanjutan tanah:
                 a.	Pentingnya Konservasi Tanah dalam Pertanian:
                 •	Menjaga kesuburan tanah: Konservasi tanah membantu menjaga kesuburan tanah dengan mencegah hilangnya unsur hara penting, menjaga struktur tanah yang baik, dan mempertahankan tingkat keasaman yang seimbang.
@@ -147,7 +147,7 @@ class EdukasiSeeder extends Seeder
             ],
             [
                 'judul' => '9.	Inovasi dalam Pertanian', 
-                'gambar' => 'Edukasi6.jpeg',
+                'gambar' => 'Inovasi dalam Pertanian.jpeg',
                 'deskripsi' => 'PerkPelatihan dan pengembangan keterampilan merupakan komponen penting dalam memperkuat kemampuan petani dalam mengelola usaha pertanian dengan baik. Berikut ini adalah beberapa sumber daya dan pelatihan yang dapat disediakan bagi petani untuk mengembangkan keterampilan mereka:
                 1.	Program Pelatihan Pertanian: Program pelatihan pertanian dapat diselenggarakan oleh pemerintah, organisasi non-pemerintah, atau lembaga pendidikan. Pelatihan ini mencakup berbagai topik, mulai dari teknik bertani modern, penggunaan teknologi pertanian, manajemen usaha pertanian, hingga pemasaran produk pertanian. Tujuan dari pelatihan ini adalah untuk memberikan petani dengan pengetahuan dan keterampilan yang diperlukan untuk mengoptimalkan produksi dan mengelola usaha pertanian dengan baik.
                 2.	Kemitraan dan Pertukaran Pengetahuan: Membentuk kemitraan antara petani dengan ahli pertanian, universitas, atau institusi penelitian dapat menjadi sumber daya berharga. Melalui pertukaran pengetahuan dan pengalaman, petani dapat memperoleh wawasan baru tentang teknik bertani terbaru, praktik terbaik, dan inovasi dalam pengelolaan usaha pertanian. Kemitraan ini juga dapat mencakup pelatihan praktis di lapangan dan pengawasan langsung untuk membantu petani dalam mengembangkan keterampilan mereka.
@@ -162,7 +162,7 @@ class EdukasiSeeder extends Seeder
             ],
             [
                 'judul' => '10.	Pelatihan dan Keterampilan Bertani', 
-                'gambar' => 'Edukasi6.jpeg',
+                'gambar' => 'Pelatihan dan Keterampilan Bertani.jpeg',
                 'deskripsi' => 'Pelatihan dan pengembangan keterampilan merupakan komponen penting dalam memperkuat kemampuan petani dalam mengelola usaha pertanian dengan baik. Berikut ini adalah beberapa sumber daya dan pelatihan yang dapat disediakan bagi petani untuk mengembangkan keterampilan mereka:
                 1.	Program Pelatihan Pertanian: Program pelatihan pertanian dapat diselenggarakan oleh pemerintah, organisasi non-pemerintah, atau lembaga pendidikan. Pelatihan ini mencakup berbagai topik, mulai dari teknik bertani modern, penggunaan teknologi pertanian, manajemen usaha pertanian, hingga pemasaran produk pertanian. Tujuan dari pelatihan ini adalah untuk memberikan petani dengan pengetahuan dan keterampilan yang diperlukan untuk mengoptimalkan produksi dan mengelola usaha pertanian dengan baik.
                 2.	Kemitraan dan Pertukaran Pengetahuan: Membentuk kemitraan antara petani dengan ahli pertanian, universitas, atau institusi penelitian dapat menjadi sumber daya berharga. Melalui pertukaran pengetahuan dan pengalaman, petani dapat memperoleh wawasan baru tentang teknik bertani terbaru, praktik terbaik, dan inovasi dalam pengelolaan usaha pertanian. Kemitraan ini juga dapat mencakup pelatihan praktis di lapangan dan pengawasan langsung untuk membantu petani dalam mengembangkan keterampilan mereka.

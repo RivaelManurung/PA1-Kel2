@@ -9,7 +9,8 @@
                     <div class="item">
                         <div class="blog-item-box">
                             <div class="thumb">
-                                <img src="{{ asset('asset/gambar/' . $proyekTani->gambar) }}" alt="{{ $proyekTani->judul }}" width="100%" height="350">
+                                <img src="{{ asset('asset/gambar/' . $proyekTani->gambar) }}"
+                                    alt="{{ $proyekTani->judul }}" width="100%" height="350">
                             </div>
                             <div class="info">
                                 <h3>{{ $proyekTani->judul }}</h3>

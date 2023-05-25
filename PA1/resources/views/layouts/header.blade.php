@@ -86,9 +86,6 @@
                       </li>
                   </ul>
               @else
-                  <li class="nav-item">
-                      <a class="nav-link" href="{{ url('/auth') }}">Login</a>
-                  </li>
                   @endif
                   </li>
 
@@ -97,33 +94,3 @@
           </nav>
       </div>
   </header><!-- End Header -->
-  <script>
-    // Function to update the notification count
-    function updateNotificationCount(count) {
-        var notificationCount = document.getElementById('notificationCount');
-        notificationCount.textContent = count;
-    }
-
-    // Send an AJAX request to mark a notification as read
-    function markNotificationAsRead(id) {
-        axios.get('Beranda' + id)
-            .then(function(response) {
-                // Update the notification count in the UI
-                var newTotal = response.data.total;
-                updateNotificationCount(newTotal);
-            })
-            .catch(function(error) {
-                console.log(error);
-            });
-    }
-
-    // Add event listeners to the "Mark as read" links
-    var markAsReadLinks = document.getElementsByClassName('mark-as-read');
-    for (var i = 0; i < markAsReadLinks.length; i++) {
-        markAsReadLinks[i].addEventListener('click', function(event) {
-            event.preventDefault();
-            var notificationId = this.getAttribute('href').split('/').pop();
-            markNotificationAsRead(notificationId);
-        });
-    }
-</script>

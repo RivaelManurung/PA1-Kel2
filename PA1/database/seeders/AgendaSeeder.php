@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Agenda;
 use Illuminate\Database\Seeder;
 
 class AgendaSeeder extends Seeder
@@ -52,11 +52,12 @@ class AgendaSeeder extends Seeder
                
             );
             foreach ($data as $d){
-                Barang::create([
+                Agenda::create([
                     'kegiatan' => $d['kegiatan'],
                     'tanggal' => $d['tanggal'],
                     'jam' => $d['jam'],
                     'tempat' => $d['tempat'],
                 ]);
-            }    }
+            }    
+    }
 }

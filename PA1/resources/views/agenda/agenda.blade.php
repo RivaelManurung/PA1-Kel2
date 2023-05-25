@@ -30,8 +30,6 @@
                 </div>
             </div>
         </div>
-
-
         <div class="container">
             @if (Auth::User()->level == 'admin')
                 <a class="btn btn-primary btn-md btn btn-tambah" href="{{ route('agenda.create') }}">Tambah</a>
@@ -75,10 +73,7 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
-
-
 <!-- End #main -->
 @include ('layouts.footer')
