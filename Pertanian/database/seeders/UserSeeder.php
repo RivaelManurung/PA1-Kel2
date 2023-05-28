@@ -4,27 +4,40 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Faker\Factory as Faker;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
 class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
+     *
+     * @return void
      */
-    public function run(): void
+    public function run()
     {
-        $faker = Faker::create('id_ID');
-        for ($i = 1; $i <= 20; $i++) {
-            DB::table('users')->insert([
-                'nama' => $faker->name,
-                'alamat' => $faker->address,
-                'username' => $faker->userName,
-                'nomorhp' => $faker->phoneNumber,
-                'email' => $faker->unique()->safeEmail,
-                'password' => bcrypt('password'),
-                'level' => 'user'
+        $data = array(
+            [
+                'username' => 'admin',
+                'email' => 'admin@gmail.com',
+                'nomorhp' => '0882015124284',
+                'alamat' => 'Jln SM Raja Lintas Sumatera',
+                'password' => Hash::make('admin123'),
+                'level' => 'admin'
+
+
+            ]
+        );
+        foreach($data AS $d){
+            User::create([
+                'username' => $d['username'],
+                'email' => $d['email'],
+                'nomorhp' => $d['nomorhp'],
+                'alamat' => $d['alamat'],
+                'password' => $d['password'],
+                'level' => $d['level']
             ]);
         }
     }
+
 }

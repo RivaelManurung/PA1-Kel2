@@ -1,6 +1,5 @@
-@include('Layouts.main')
-@include('Layouts.header')
-
+@include('layouts.main')
+@include('layouts.header')
 <!-- main -->
 <br><br><br>
 <div class="contact-area default-padding">
@@ -24,7 +23,8 @@
                             <div class="row mb-3">
                                 <div class="col-lg-12">
                                     <div class="form-floating">
-                                        <label for="nik">Nama Alat</label>
+                                        <p>Nama Alat</p>
+                                        <label for="nik"></label>
                                         <input class="form-control" id="nama" name="namaalat"
                                                placeholder="nama alat" type="text"
                                                value="{{ $barang->nama }}"readonly>
@@ -35,7 +35,8 @@
                                 <div class="col-lg-12">
 
                                     <div class="form-floating">
-                                        <label for="Stok" class="form-label">Pinjam Alat</label>
+                                        <p>Pinjam Alat</p>
+                                        <label for="Stok" class="form-label"></label>
                                         <input class="form-control @error('jumlah') is-invalid  @enderror"
                                                id="nama" name="jumlah" placeholder="Stok" type="number"
                                                autocomplete="off">
@@ -51,11 +52,12 @@
                             <div class="row mb-3">
                                 <div class="col-lg-12">
                                     <div class="form-floating">
-                                        <label for="rencana peminjaman">Rencana Peminjaman Barang</label>
+                                        <p>Rencana Peminjaman Barang</p>
+                                        <label for="rencana peminjaman"></label>
                                         <input
                                             class="form-control datepicker @error('tanggal_peminjaman') is-invalid  @enderror"
-                                            id="rencana peminjaman" name="tanggal_peminjaman"
-                                            placeholder="rencana peminjaman" type="text" autocomplete="off">
+                                            id="rencana peminjaman" name="tanggal_peminjaman" 
+                                            placeholder="rencana peminjaman" type="date" autocomplete="off">
                                         @error('tanggal_peminjaman')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -67,11 +69,12 @@
                             <div class="row mb-3">
                                 <div class="col-lg-12">
                                     <div class="form-floating">
-                                        <label for="rencana pemulangan">Rencana Pemulangan Barang</label>
+                                        <p>Rencana Pemulangan Barang</p>
+                                        <label for="rencana pemulangan"></label>
                                         <input
                                             class="form-control datepicker @error('tanggal_pemulangan') is-invalid  @enderror"
                                             id="rencana pemulangan" name="tanggal_pemulangan"
-                                            placeholder="rencana pemulangan" type="text" autocomplete="off">
+                                            placeholder="rencana pemulangan" type="date" autocomplete="off">
                                         @error('tanggal_pemulangan')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -100,4 +103,4 @@
     });
 </script>
 <!-- end main -->
-@include('Layouts.footer')
+@include('layouts.footer')

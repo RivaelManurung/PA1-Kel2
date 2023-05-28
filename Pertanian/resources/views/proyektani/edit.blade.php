@@ -1,5 +1,5 @@
-@include('Layouts.main')
-@include('Layouts.header')
+@include('layouts.main')
+@include('layouts.header')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-10">
@@ -44,4 +44,4 @@
     </div>
 </div>
 
-@include('Layouts.footer')
+@include('layouts.footer')

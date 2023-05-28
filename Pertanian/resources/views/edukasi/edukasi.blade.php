@@ -1,7 +1,19 @@
-@include ('Layouts.main')
-@include('Layouts.header')
+@include ('layouts.main')
+@include('layouts.header')
+    <!-- Page Header Start -->
+    <div id="header" class="container-fluid page-header py-5  fadeIn" >
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-white mb-4 animated slideInDown">Edukasi</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item text-white"><a href="{{ route('Beranda') }}">Beranda</a></li>
+                    <li class="breadcrumb-item text-primary" aria-current="page">Edukasi</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
 <!-- main -->
-<div class="blog-area full-blog blog-standard full-blog grid-colum default-padding">
     <div class="container">
         <div class="row justify-content-center">
             <div class="my-5"><br><br>
@@ -17,14 +29,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="blog-items">
-            <div class="blog-content">
-                <div class="blog-item-box">
-                    <div class="row">
+        
                         <div class="container">
                             @if (Auth::User()->level == 'admin')
-                                <a class="btn btn-gray border btn-md btn btn-tambah"
+                                <a class="btn btn-primary btn-md btn btn-tambah"
                                     href="{{ route('edukasi.create') }}">Tambah</a><br><br>
                             @endif
                             @foreach ($edukasi as $item)
@@ -42,21 +50,21 @@
                                                 </div>
                                                 <div>
                                                     @if (Auth::User()->level == 'admin')
-                                                        <a class="btn btn-gray border btn-md btn-edit"
+                                                        <a class="btn btn-primary btn-md btn-edit"
                                                             href="{{ route('edukasi.edit', $item->id) }}">Edit</a>
                                                         <form action="{{ route('edukasi.destroy', $item->id) }}"
                                                             method="POST">
                                                             @csrf
                                                             @method('DELETE')
                                                             <button type="submit"
-                                                                class="btn btn-gray border btn-md btn-hapus">Hapus</button>
+                                                            class="btn btn-danger btn-md btn-hapus">Hapus</button>
                                                         </form>
-                                                        <a class="btn btn-gray border btn-md btn-selengkapnya"
-                                                            href="{{ route('edukasi.show', $item->id) }}">Selengkapnya</a>
-                                                    @else
-                                                        <a class="btn btn-gray border btn-md btn-selengkapnya"
-                                                            href="{{ route('edukasi.show', $item->id) }}">Selengkapnya</a>
-                                                    @endif
+                                                        <a class="btn btn-primary btn-md btn-selengkapnya"
+                                                        href="{{ route('edukasi.show', $item->id) }}">Selengkapnya</a>
+                                                @else
+                                                    <a class="btn btn-primary btn-md btn-selengkapnya"
+                                                        href="{{ route('edukasi.show', $item->id) }}">Selengkapnya</a>
+                                                @endif
                                                 </div>
                                             </div>
                                         </div>
@@ -78,4 +86,4 @@
 </div>
 
 <!-- End #main -->
-@include ('Layouts.footer')
+@include ('layouts.footer')

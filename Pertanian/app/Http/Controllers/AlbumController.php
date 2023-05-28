@@ -17,7 +17,7 @@ class AlbumController extends Controller
         $search = $request->search;
         $album = Album::where('judul', 'like', '%' . $request->search . '%')
         ->orderBy('id', 'DESC')
-        ->paginate(3);
+        ->paginate(12);
         return view('album.album', compact('album'));
     }
 

@@ -1,5 +1,5 @@
-@include('Layouts.main')
-@include('Layouts.header')
+@include('layouts.main')
+@include('layouts.header')
 <!-- main -->
 <div class="container">
         <div class="row justify-content-center">
@@ -21,7 +21,7 @@
                         <div class="form-group row">
                             <label for="gambar" class="col-sm-2 col-form-label">Gambar</label>
                             <div class="col-sm-10">
-                                <input type="file" class="form-control @error('gambar') is-invalid @enderror" id="gambar"name="gambar">  
+                                <input type="file" class="form-control @error('gambar ') is-invalid @enderror" id="gambar"name="gambar">  
                             </div>                                                         
                         </div>
                         @error('gambar')
@@ -44,5 +44,6 @@
             </div>
         </div>
     </div>
+    
     <!-- end main -->
-    @include ('Layouts.footer')
+    @include ('layouts.footer')

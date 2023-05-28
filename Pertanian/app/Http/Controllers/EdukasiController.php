@@ -23,7 +23,7 @@ class EdukasiController extends Controller
         $search = $request->search;
         $edukasi = Edukasi::where('judul', 'like', '%' . $request->search . '%')
         ->orderBy('id', 'DESC')
-        ->paginate(3);
+        ->paginate(5);
         return view('edukasi.edukasi',compact('edukasi'));
     }
 
