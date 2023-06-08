@@ -28,7 +28,7 @@ class BarangSeeder extends Seeder
             [
                 'nama' => 'kultivator', 
                 'jumlah' => '10',
-                'gambar' => 'kultivator.jpg',
+                'gambar' => 'kultivator.png',
             ],
             [
                 'nama' => 'Mesin pemanen-odong-odong', 

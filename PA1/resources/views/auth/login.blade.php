@@ -20,6 +20,7 @@
         Sitani
     </div>
     <form class="p-3 mt-3" action="{{ route('login.aksi') }}" method="POST" class="user">
+    {{-- melindungi aplikasi dari serangan CSRF dengan memastikan bahwa hanya permintaan yang berasal dari aplikasi sendiri yang diterima --}}
     @csrf
 	@if ($errors->any())
 	<div class="alert alert-danger">

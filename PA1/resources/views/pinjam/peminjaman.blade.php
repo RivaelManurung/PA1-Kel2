@@ -7,7 +7,7 @@
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb justify-content-center mb-0">
                 <li class="breadcrumb-item text-white"><a href="{{ route('Beranda') }}">Beranda</a></li>
-                <li class="breadcrumb-item text-primary" aria-current="page">Pemninjaman</li>
+                <li class="breadcrumb-item text-primary" aria-current="page">Peminjaman</li>
             </ol>
         </nav>
     </div>
@@ -31,7 +31,8 @@
         </div>
     </div>
 </div>
-@if (Auth::user()->level == 'admin')
+
+@if (Auth::user()->hasRole('admin'))
     <div>
         <table>
             <tr>
@@ -42,7 +43,7 @@
                 <th>Tanggal Peminjaman</th>
                 <th>Tanggal Pemulangan</th>
                 <th>Status</th>
-                <th class="text-center ">Aksi</th>
+                <th class="text-center">Aksi</th>
             </tr>
             @foreach ($pinjam as $item)
                 <tr>
@@ -53,22 +54,24 @@
                     <th>{{ $item->tanggal_peminjaman }}</th>
                     <th>{{ $item->tanggal_pemulangan }}</th>
                     <th>{{ $item->status }}</th>
-                    <th class="row justify-content-center">
-                        <form action="{{ route('pinjam.terima', $item->id) }}" method="POST">
-                            @csrf
-                            @method('PATCH')
-                            <button type="submit" class="btn btn-success mx-1">Terima</button>
-                        </form>
-                        <form action="{{ route('pinjam.tolak', $item->id) }}" method="POST">
-                            @csrf
-                            @method('PATCH')
-                            <button type="submit" class="btn btn-danger mx-1">Tolak</button>
-                        </form>
-                        <form action="{{ route('pinjam.denda', $item->id) }}" method="POST">
-                            @csrf
-                            @method('PATCH')
-                            <button type="submit" class="btn btn-warning mx-1">Denda</button>
-                        </form>
+                    <th class="text-center">
+                        <div class="action-buttons">
+                            <form action="{{ route('pinjam.terima', $item->id) }}" method="POST" class="action-form">
+                                @csrf
+                                @method('PATCH')
+                                <button type="submit" class="btn btn-success mx-1">Terima</button>
+                            </form>
+                            <form action="{{ route('pinjam.tolak', $item->id) }}" method="POST" class="action-form">
+                                @csrf
+                                @method('PATCH')
+                                <button type="submit" class="btn btn-danger mx-1">Tolak</button>
+                            </form>
+                            <form action="{{ route('pinjam.denda', $item->id) }}" method="POST" class="action-form">
+                                @csrf
+                                @method('PATCH')
+                                <button type="submit" class="btn btn-warning mx-1">Denda</button>
+                            </form>
+                        </div>
                     </th>
                 </tr>
             @endforeach
@@ -80,6 +83,8 @@
         </div>
     </div>
 @else
+
+
     <section class="team-section">
         <div class="container">
             <div class="row">

@@ -24,7 +24,7 @@ class AgendaController extends Controller
          $search = $request->search;
          $agenda = agenda::where('kegiatan', 'like', '%' . $request->search . '%')
          ->orderBy('id', 'DESC')
-         ->paginate(3);
+         ->paginate(4);
          return view('agenda.agenda',compact('agenda'));
      }
  

@@ -32,7 +32,7 @@
 
 
     <div class="container">
-        @if (Auth::User()->level == 'admin')
+        @if (Auth::user()->hasRole('admin'))
             <a class="btn btn-primary btn-md btn btn-tambah" href="{{ route('proyekTani.create') }}">Tambah</a><br><br>
         @endif
         @foreach ($proyekTani as $item)
@@ -48,7 +48,7 @@
                             <p class="abc card-text">
                                 {!! Str::limit($item->deskripsi, 200) !!}
                             </p>
-                            @if (Auth::User()->level == 'admin')
+                            @if (Auth::user()->hasRole('admin'))
                                 <a class="btn btn-primary btn-md btn-edit"
                                     href="{{ route('proyekTani.edit', $item->id) }}">Edit</a>
                                 <form action="{{ route('proyekTani.destroy', $item->id) }}" method="POST">

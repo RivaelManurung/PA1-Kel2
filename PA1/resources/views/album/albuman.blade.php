@@ -11,14 +11,9 @@
                     <div class="item">
                         <div class="blog-item-box">
                             <div class="thumb"><br>
+                                <h1 class="judul">{!! $album->judul !!}</h1>
                                 <img src="{{ asset('asset/album/' . $album->gambar) }}" alt="{{ $album->judul }}"
                                     width="100%" height="350">
-                            </div>
-                            <div class="info">
-                                <h3>{{ $album->album }}</h3>
-                                <p>
-                                <p>{!! $album->judul !!}</p>
-                                </p>
                             </div>
                         </div>
                     </div>

@@ -9,6 +9,7 @@ use App\Http\Controllers\PinjamController;
 use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\AlbumController;
+use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -23,12 +24,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::middleware('auth')->group(function () {
+    Route::get('Beranda', function () {
+        return view('Beranda');
+    })->name('Beranda');
 
-Route::get('dashboard', function () {
-    return view('dashboard/dashboard');
-});
-Route::get('barang', function () {
-    return view('barang/barang');
 });
 Route::controller(AuthController::class)->group(function () {
     Route::get('/',[AuthController::class, 'login'])->name('auth.index');
@@ -44,8 +44,10 @@ Route::resource('edukasi', EdukasiController::class);
 Route::resource('/barang', BarangController::class);
 Route::resource('agenda', AgendaController::class);
 Route::resource('album', AlbumController::class);
+Route::resource('video', VideoController::class);
 Route::resource('proyekTani', ProyekTaniController::class);
 Route::get('/history',[HistoryController::class, 'index'])->name('history.index');
+//miliki parameter dinamis {pinjam} yang akan digunakan sebagai ID peminjaman
 Route::patch('pinjam/{pinjam}/terima',[PinjamController::class,'terima'])->name('pinjam.terima');
 Route::patch('pinjam/{pinjam}/tolak',[PinjamController::class,'tolak'])->name('pinjam.tolak');
 Route::patch('pinjam/{pinjam}/denda',[PinjamController::class,'denda'])->name('pinjam.denda');
@@ -55,9 +57,4 @@ Route::prefix('pinjam/')->name('pinjam.')->group(function(){
     Route::post('store',[PinjamController::class, 'store'])->name('store');
 });
 
-Route::middleware('auth')->group(function () {
-    Route::get('Beranda', function () {
-        return view('Beranda');
-    })->name('Beranda');
 
-});

@@ -35,7 +35,7 @@ class AlbumController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Htt  p\Response
      */
     public function store(Request $request)
     {
@@ -68,7 +68,7 @@ class AlbumController extends Controller
         return view('album.albuman',compact('album'));
     }
 
-
+  
     /**
      * Show the form for editing the specified resource.
      *

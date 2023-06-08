@@ -18,15 +18,15 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-		'nama',
-		'email',
+        'nama',
+        'email',
         'alamat',
         'nomorhp',
         'username',
-		'password',
-		'level'
+        'password',
+        'role_id'
     ];
-
+    
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -50,4 +50,14 @@ class User extends Authenticatable
     {
         return $this->hasMany(Mapel::class);
     }
+    public function role()
+{
+    return $this->belongsTo(Role::class);
+}
+public function hasRole($role)
+{
+    return $this->role()->where('name', $role)->exists();
+}
+
+
 }

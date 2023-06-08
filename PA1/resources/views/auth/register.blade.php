@@ -11,7 +11,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 </head>
-
 <body>
     <div class="wrapper">
         <div class="logo">
@@ -20,8 +19,9 @@
         <div class="text-center name">
             Sitani
         </div>
-        <form action="{{ route('register.simpan') }}" method="POST" class="user" class="p-3 mt-3">
+        <form action="{{ route('register.simpan') }}" method="POST" class="user p-3 mt-3">
             @csrf
+            <input type="hidden" name="role_id" value="2"> <!-- Set role_id to 1 for "petani" role -->
             <div class="form-group">
                 <div class="form-field d-flex align-items-center">
                     <span class="far fa-user"></span>
@@ -38,7 +38,7 @@
                     <span class="far fa-user"></span>
                     <input type="text" name="alamat"
                         class="form-control form-control-user @error('alamat')is-invalid @enderror"
-                        placeholder="alamat Address">
+                        placeholder="Alamat">
                     @error('alamat')
                         <span class="invalid-feedback">{{ $message }}</span>
                     @enderror
@@ -49,7 +49,7 @@
                     <span class="far fa-user"></span>
                     <input type="text" name="nomorhp"
                         class="form-control form-control-user @error('nomorhp')is-invalid @enderror"
-                        onkeypress="return event.charCode >= 48 && event.charCode <=57" placeholder="nomorhp Address">
+                        onkeypress="return event.charCode >= 48 && event.charCode <=57" placeholder="Nomor HP">
                     @error('nomorhp')
                         <span class="invalid-feedback">{{ $message }}</span>
                     @enderror
@@ -60,7 +60,7 @@
                     <span class="fas fa-at"></span>
                     <input type="email" name="email"
                         class="form-control form-control-user @error('email')is-invalid @enderror"
-                        placeholder="Email Address">
+                        placeholder="Email">
                     @error('email')
                         <span class="invalid-feedback">{{ $message }}</span>
                     @enderror
@@ -90,8 +90,10 @@
             </div>
             <button type="submit" class="btn mt-3 btn btn-primary btn-user btn-block">Register</button>
         </form>
+    </div>
+     
         <div class="text-center fs-6">
-            <a href="{{ route('login') }}">Already have an account?</a> or <a>Login</a>
+            <a href="{{ route('login') }}">Already have an account? </a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>

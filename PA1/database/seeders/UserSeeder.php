@@ -2,42 +2,41 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+use App\Models\Role;
 
 class UserSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
-        $data = array(
-            [
-                'username' => 'admin',
-                'email' => 'admin@gmail.com',
-                'nomorhp' => '0882015124284',
-                'alamat' => 'Jln SM Raja Lintas Sumatera',
-                'password' => Hash::make('admin123'),
-                'level' => 'admin'
+        // Create roles
+        $adminRole = Role::create(['name' => 'admin']);
+        $userRole = Role::create(['name' => 'user']);
 
+        // Create admin user
+        User::create([
+            'nama' => 'Admin',
+            'alamat' => 'Admin Address',
+            'username' => 'admin',
+            'nomorhp' => '123456789',
+            'email' => 'admin@example.com',
+            'password' => bcrypt('password'),
+            'role_id' => $adminRole->id,
+        ]);
 
-            ]
-        );
-        foreach($data AS $d){
-            User::create([
-                'username' => $d['username'],
-                'email' => $d['email'],
-                'nomorhp' => $d['nomorhp'],
-                'alamat' => $d['alamat'],
-                'password' => $d['password'],
-                'level' => $d['level']
-            ]);
-        }
+        // Create regular user
+        User::create([
+            'nama' => 'User',
+            'alamat' => 'User Address',
+            'username' => 'user',
+            'nomorhp' => '987654321',
+            'email' => 'user@example.com',
+            'password' => bcrypt('password'),
+            'role_id' => $userRole->id,
+        ]);
+
+        // ... create more users if needed
     }
-
 }
+

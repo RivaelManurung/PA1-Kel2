@@ -34,7 +34,7 @@ class AuthController extends Controller
 			'nomorhp' => $request->nomorhp,
 			'email' => $request->email,
 			'password' => Hash::make($request->password),
-			'level' => 'user'
+			'role_id' => '2'
 		]);
 
 		return redirect()->route('login');

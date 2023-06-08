@@ -29,9 +29,7 @@
     <link href=" {{ asset('assets/css/style.css') }}" rel="stylesheet">
     <link href=" {{ asset('assets/css/login.css') }}" rel="stylesheet">
     <link href=" {{ asset('assets/css/style4.css') }}" rel="stylesheet">
-    {{-- <link href=" {{ asset('assets/css/style3.css') }}" rel="stylesheet">
-    <link href=" {{ asset('assets/css/style2.css') }}" rel="stylesheet">
- --}}
+
 
 
 <body>

@@ -3,7 +3,7 @@
 <!-- Page Header Start -->
 <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container text-center py-5">
-        <h1 class="display-2 text-white mb-4 animated slideInDown">Edukasi</h1>
+        <h1 class="display-2 text-white mb-4 animated slideInDown">Album</h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb justify-content-center mb-0">
                 <li class="breadcrumb-item text-white "><a href="{{ route('Beranda') }}">Beranda</a></li>
@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        @if (Auth::user()->level == 'admin')
+        @if (Auth::user()->hasRole('admin'))
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -48,7 +48,7 @@
                         <img src="{{ asset('asset/album/' . $item->gambar) }}" alt="{{ $item->judul }}" width="100%"
                             height="auto" style="border-radius: 5px;">
                         <div style="text-align: center;">
-                            @if (Auth::user()->level == 'admin')
+                            @if (Auth::user()->hasRole('admin'))
                                 <a class="btn btn-primary btn-md btn-edit"
                                     href="{{ route('album.edit', $item->id) }}">Edit</a>
                                 <form action="{{ route('album.destroy', $item->id) }}" method="POST">

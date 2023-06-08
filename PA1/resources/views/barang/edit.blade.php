@@ -4,21 +4,7 @@
 <script src=" {{ asset('assets/vendor/summernote/summernote-bs4.min.js') }}"></script>
 
 <!-- main -->
-<div class="breadcrumb-area text-center shadow dark-hard bg-fixed text-light"
-    style="background-image: url('images/Bg5.jpeg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <h1>Sitani</h1>
-                <ul class="breadcrumb">
-                    <li><a href="/barang"><i class="fas fa-home"></i> Barang</a></li>
-                    <li class="active">Tani</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
+<div class="container"><br><br><br>
     <div class="row justify-content-center">
         <div class="col-lg-10">
             <div class="form-content">

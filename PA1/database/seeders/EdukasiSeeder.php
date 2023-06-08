@@ -15,7 +15,7 @@ class EdukasiSeeder extends Seeder
         $data = array(
             [
                 'judul' => '1.	Pengenalan Pertanian', 
-                'gambar' => 'Pengenalan Pertania.jpeg',
+                'gambar' => 'Pengenalan Pertanian.jpg',
                 'deskripsi' => 'Pertanian telah menjadi bagian integral dari kehidupan manusia selama ribuan tahun. Seiring waktu, praktik pertanian telah mengalami perkembangan signifikan, mulai dari metode tradisional hingga teknologi modern yang digunakan saat ini. Bagian Pengenalan Pertanian dalam website ini menyajikan gambaran umum mengenai pertanian, mencakup berbagai topik penting seperti sejarah, perkembangan, dan peran yang dimainkan dalam masyarakat.
                 a.	Sejarah 
                 pertanian melibatkan evolusi cara manusia memanfaatkan tanah dan sumber daya alam untuk memenuhi kebutuhan pangan. Dari revolusi pertanian di Mesir Kuno hingga revolusi hijau pada abad ke-20, pertanian telah mengalami perubahan signifikan dalam hal teknologi, pengelolaan lahan, dan pemuliaan tanaman. Informasi sejarah ini membantu kita memahami bagaimana manusia telah beradaptasi dan mengembangkan metode pertanian yang lebih efisien seiring berjalannya waktu.
@@ -60,7 +60,7 @@ class EdukasiSeeder extends Seeder
             ],
             [
                 'judul' => '4. Pemupukan dan Pengendalian Hama', 
-                'gambar' => 'Pemupukan dan Pengendalian Hama.jpg',
+                'gambar' => 'Pemupukan dan Pengendalian Hama.jpeg',
                 'deskripsi' => '•	Pemupukan yang Tepat: 
                 Pemupukan yang tepat sangat penting untuk memastikan pertumbuhan dan produktivitas tanaman yang optimal. Pengetahuan tentang kebutuhan nutrisi tanaman dan kandungan nutrisi dalam tanah menjadi dasar dalam melakukan pemupukan yang efektif. Berbagai jenis nutrisi, seperti nitrogen (N), fosfor (P), dan kalium (K), diperlukan oleh tanaman dalam jumlah yang berbeda-beda. Pemilihan pupuk yang sesuai, baik pupuk organik maupun pupuk anorganik, akan membantu memenuhi kebutuhan nutrisi tanaman. Pemupukan juga perlu dilakukan pada waktu yang tepat, dengan memperhatikan fase pertumbuhan tanaman.
                 •	Pengendalian Hama dan Penyakit: 
@@ -88,7 +88,7 @@ class EdukasiSeeder extends Seeder
             ],
             [
                 'judul' => '6.	Cara Pemanenan beserta Pasca Panen Bawang Merah', 
-                'gambar' => 'Perubahan Iklim dan Pertanian.jpeg',
+                'gambar' => 'Perubahan Iklim dan Pertanian.jpg',
                 'deskripsi' => 'Dampak perubahan iklim terhadap sektor pertanian dan cara menghadapinya. Dalam konteks ini, perubahan iklim merujuk pada perubahan jangka panjang dalam pola cuaca dan kondisi atmosfer global sebagai hasil dari aktivitas manusia, terutama emisi gas rumah kaca.
                 a.	Dampak Perubahan Iklim terhadap Pertanian
                 Perubahan iklim memiliki dampak yang signifikan terhadap pertanian. Beberapa dampak tersebut meliputi:
@@ -106,7 +106,7 @@ class EdukasiSeeder extends Seeder
                 ],
             [
                 'judul' => '7.	Pasar Pertanian dan Pemasaran', 
-                'gambar' => 'Pasar Pertanian dan Pemasaran.jpeg',
+                'gambar' => 'Pasar Pertanian dan Pemasaran.jpg',
                 'deskripsi' => 'Pasar Pertanian dan Pemasaran adalah tentang cara menjual produk pertanian kepada orang-orang yang ingin membelinya. Ini penting karena petani ingin memastikan produk pertanian mereka dapat ditemukan dan dibeli oleh konsumen. Strategi Pemasaran Produk Pertanian adalah cara untuk membuat orang tahu tentang produk pertanian yang dijual dan mengapa mereka harus memilih produk tersebut. Beberapa strategi yang digunakan adalah:
                 •	Membangun merek: Ini berarti memberikan identitas khusus pada produk, seperti nama, logo, atau kemasan yang unik, agar orang bisa mengenali produk tersebut.
                 •	Menggunakan media sosial dan internet: Petani dapat memanfaatkan teknologi seperti Facebook, Instagram, atau situs web untuk mempromosikan produk mereka dan berinteraksi dengan konsumen potensial.
@@ -122,7 +122,7 @@ class EdukasiSeeder extends Seeder
             ],
             [
                 'judul' => '8.	Konservasi Tanah', 
-                'gambar' => 'Konservasi Tana.jpeg',
+                'gambar' => 'Konservasi Tana.jpg',
                 'deskripsi' => 'Konservasi Tanah adalah suatu upaya untuk menjaga dan memelihara kualitas tanah dalam konteks pertanian. Ini sangat penting karena tanah yang sehat dan subur adalah aset berharga bagi petani dan untuk keberlanjutan produksi pangan. Berikut adalah penjelasan mengenai pentingnya konservasi tanah dan panduan tentang cara mengurangi erosi tanah, pemulihan lahan terdegradasi, dan pengelolaan keberlanjutan tanah:
                 a.	Pentingnya Konservasi Tanah dalam Pertanian:
                 •	Menjaga kesuburan tanah: Konservasi tanah membantu menjaga kesuburan tanah dengan mencegah hilangnya unsur hara penting, menjaga struktur tanah yang baik, dan mempertahankan tingkat keasaman yang seimbang.
@@ -147,7 +147,7 @@ class EdukasiSeeder extends Seeder
             ],
             [
                 'judul' => '9.	Inovasi dalam Pertanian', 
-                'gambar' => 'Inovasi dalam Pertanian.jpeg',
+                'gambar' => 'Inovasi dalam Pertanian.jpg',
                 'deskripsi' => 'PerkPelatihan dan pengembangan keterampilan merupakan komponen penting dalam memperkuat kemampuan petani dalam mengelola usaha pertanian dengan baik. Berikut ini adalah beberapa sumber daya dan pelatihan yang dapat disediakan bagi petani untuk mengembangkan keterampilan mereka:
                 1.	Program Pelatihan Pertanian: Program pelatihan pertanian dapat diselenggarakan oleh pemerintah, organisasi non-pemerintah, atau lembaga pendidikan. Pelatihan ini mencakup berbagai topik, mulai dari teknik bertani modern, penggunaan teknologi pertanian, manajemen usaha pertanian, hingga pemasaran produk pertanian. Tujuan dari pelatihan ini adalah untuk memberikan petani dengan pengetahuan dan keterampilan yang diperlukan untuk mengoptimalkan produksi dan mengelola usaha pertanian dengan baik.
                 2.	Kemitraan dan Pertukaran Pengetahuan: Membentuk kemitraan antara petani dengan ahli pertanian, universitas, atau institusi penelitian dapat menjadi sumber daya berharga. Melalui pertukaran pengetahuan dan pengalaman, petani dapat memperoleh wawasan baru tentang teknik bertani terbaru, praktik terbaik, dan inovasi dalam pengelolaan usaha pertanian. Kemitraan ini juga dapat mencakup pelatihan praktis di lapangan dan pengawasan langsung untuk membantu petani dalam mengembangkan keterampilan mereka.
@@ -162,7 +162,7 @@ class EdukasiSeeder extends Seeder
             ],
             [
                 'judul' => '10.	Pelatihan dan Keterampilan Bertani', 
-                'gambar' => 'Pelatihan dan Keterampilan Bertani.jpeg',
+                'gambar' => 'Pelatihan dan Keterampilan Bertani.jpg',
                 'deskripsi' => 'Pelatihan dan pengembangan keterampilan merupakan komponen penting dalam memperkuat kemampuan petani dalam mengelola usaha pertanian dengan baik. Berikut ini adalah beberapa sumber daya dan pelatihan yang dapat disediakan bagi petani untuk mengembangkan keterampilan mereka:
                 1.	Program Pelatihan Pertanian: Program pelatihan pertanian dapat diselenggarakan oleh pemerintah, organisasi non-pemerintah, atau lembaga pendidikan. Pelatihan ini mencakup berbagai topik, mulai dari teknik bertani modern, penggunaan teknologi pertanian, manajemen usaha pertanian, hingga pemasaran produk pertanian. Tujuan dari pelatihan ini adalah untuk memberikan petani dengan pengetahuan dan keterampilan yang diperlukan untuk mengoptimalkan produksi dan mengelola usaha pertanian dengan baik.
                 2.	Kemitraan dan Pertukaran Pengetahuan: Membentuk kemitraan antara petani dengan ahli pertanian, universitas, atau institusi penelitian dapat menjadi sumber daya berharga. Melalui pertukaran pengetahuan dan pengalaman, petani dapat memperoleh wawasan baru tentang teknik bertani terbaru, praktik terbaik, dan inovasi dalam pengelolaan usaha pertanian. Kemitraan ini juga dapat mencakup pelatihan praktis di lapangan dan pengawasan langsung untuk membantu petani dalam mengembangkan keterampilan mereka.

@@ -20,7 +20,7 @@ class BarangController extends Controller
             $barang = Barang::where('nama', 'like', '%' . $request->search . '%')
             ->orWhere('jumlah', 'like', '%' . $request->search . '%')
             ->orderBy('id', 'DESC')
-            ->paginate(3);
+            ->paginate(6);
         return view('barang.barang',compact('barang'));
     }
 

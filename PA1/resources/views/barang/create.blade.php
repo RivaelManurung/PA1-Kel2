@@ -7,8 +7,8 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-10">
-            <div class="form-content">
-                <h2 class="text-center">Tambah Alat</h2>
+            <div class="form-content"><br>
+                <h2 class="text-center">Tambah Barang</h2>
                 <form action="{{ route('barang.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group row">

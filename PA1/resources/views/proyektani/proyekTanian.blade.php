@@ -2,7 +2,7 @@
 @include('layouts.header')
 
 <div class="blog-area single full-blog full-blog default-padding">
-    <div class="container">
+    <div class="container"><br><br>
         <div class="blog-items">
             <div class="row">
                 <div class="blog-content wow fadeInUp col-lg-10 offset-lg-1 col-md-12">

@@ -32,28 +32,21 @@
     </div>
 
     <div class="container">
-        @if (Auth::User()->level == 'admin')
+        @if (Auth::user()->hasRole('admin'))
             <a class="btn btn-primary btn-md btn-tambah" href="{{ route('barang.create') }}">Tambah</a>
         @endif
-        @foreach ($barang as $item)
-            <div class="card mb-3">
-                <div class="row">
-                    <div class="col-md-5">
-                        <img src="{{ asset('asset/gambar/' . $item->gambar) }}" alt="{{ $item->nama }}" width="100%"
-                            height="250px">
-                    </div>
-                    <div class="col-md-7">
+    
+        <div class="row">
+            @foreach ($barang as $item)
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{{ asset('asset/gambar/' . $item->gambar) }}" alt="{{ $item->nama }}"
+                            class="card-img-top" style="height: 250px;">
                         <div class="card-body">
-                            <div class="flex-grow-1">
-                                <p class="text-muted mb-1">Nama Barang:</p>
-                                <h5 class="card-title">{{ $item->nama }}</h5>
-                            </div>
-                            <br>
-                            <div class="flex-grow-1">
-                                <p class="text-muted mb-1">Stok:</p>
-                                <h5 class="card-title">{{ $item->jumlah }}</h5>
-                            </div>
-                            @if (Auth::User()->level == 'admin')
+                            <h5 class="card-title">{{ $item->nama }}</h5>
+                            <p class="card-text">Stok: {{ $item->jumlah }}</p>
+    
+                            @if (Auth::user()->hasRole('admin'))
                                 <div class="d-flex justify-content-end">
                                     <a class="btn btn-primary btn-md btn-edit"
                                         href="{{ route('barang.edit', $item->id) }}">Edit</a>
@@ -64,21 +57,19 @@
                                     </form>
                                 </div>
                             @else
-                                <a class="btn btn-primary btn-md"
-                                    href="{{ route('barang.show', $item->id) }}">Pinjam</a>
+                                <a class="btn btn-primary btn-md" href="{{ route('barang.show', $item->id) }}">Pinjam</a>
                             @endif
                         </div>
                     </div>
                 </div>
-            </div>
-        @endforeach
-        <div class="d-flex">
-            <div class="mx-auto">
-                {{ $barang->links('pagination::bootstrap-4') }}
-            </div>
+            @endforeach
+        </div>
+    
+        <div class="d-flex justify-content-center">
+            {{ $barang->links('pagination::bootstrap-4') }}
         </div>
     </div>
-</div>
+    
 
 <!-- end main -->
 @include ('layouts.footer')

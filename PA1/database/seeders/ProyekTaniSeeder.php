@@ -28,7 +28,7 @@ class ProyekTaniSeeder extends Seeder
             ],
             [
                 'judul' => '3.	PERENCANAAN PENGEMBANGAN BIJI KOPI ARABIKA', 
-                'gambar' => 'bibitkopi.jpeg',
+                'gambar' => 'bijikopi.jpeg',
                 'deskripsi' => 'Berdasarkan perjanjian Kerjasama antara dinas pertanian kabupaten toba samosir dengan dinas pariwisata, kopi arabika akan lebih dikembangkan lagi dikarenakan banyak nya wisatawan yang tertarik dengan kopi arabika atau sering disebut dengan kopi toba. Penanaman dan pengembangan biji kopi arabika ini telah didukung langsung oleh dinas pertanian toba samosir dengan memberi benih bibit kopi sebanyak 45kg kepada setiap petani yang ada di desa pardomuan nauli kecamatan laguboti. Yang nantinya hasil dari kopi arabika ini akan diperjualbelikan didalam maupun diluar negeri, dan akan memberikan kenaikan dampak ekonomi bagi masyarakat toba khusunya desa pardomuan nauli.',
             ],
         );

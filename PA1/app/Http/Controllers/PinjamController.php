@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Barang;
 use App\Models\Peminjaman;
-use App\Http\Requests\StoreEdukasiRequest;
-use App\Http\Requests\UpdateEdukasiRequest;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
@@ -14,7 +13,7 @@ class PinjamController extends Controller
 {
     public function index(Request $request)
     {
-        if(Auth::user()->level=="admin"){
+        if(Auth::user()->hasRole('admin')){
             $search = $request->search;
             $pinjam = Peminjaman::where('nama', 'like', '%' . $request->search . '%')
             ->orWhere('alamat', 'like', '%' . $request->search . '%')
