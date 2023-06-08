@@ -120,33 +120,9 @@ class EdukasiSeeder extends Seeder
                 •	Membentuk kemitraan: Petani dapat bekerja sama dengan restoran, supermarket, atau hotel untuk menjual produk mereka. Ini membantu produk pertanian mencapai lebih banyak orang dan membuka peluang bisnis baru.
                 Dengan menggunakan strategi pemasaran yang tepat, menjual secara langsung kepada konsumen, dan memanfaatkan peluang dalam perdagangan, petani dapat memastikan produk pertanian mereka dikenal oleh masyarakat, dihargai, dan dapat ditemukan dengan mudah oleh orang tua yang ingin membelinya.',
             ],
+
             [
-                'judul' => '8.	Konservasi Tanah', 
-                'gambar' => 'Konservasi Tana.jpg',
-                'deskripsi' => 'Konservasi Tanah adalah suatu upaya untuk menjaga dan memelihara kualitas tanah dalam konteks pertanian. Ini sangat penting karena tanah yang sehat dan subur adalah aset berharga bagi petani dan untuk keberlanjutan produksi pangan. Berikut adalah penjelasan mengenai pentingnya konservasi tanah dan panduan tentang cara mengurangi erosi tanah, pemulihan lahan terdegradasi, dan pengelolaan keberlanjutan tanah:
-                a.	Pentingnya Konservasi Tanah dalam Pertanian:
-                •	Menjaga kesuburan tanah: Konservasi tanah membantu menjaga kesuburan tanah dengan mencegah hilangnya unsur hara penting, menjaga struktur tanah yang baik, dan mempertahankan tingkat keasaman yang seimbang.
-                •	Mengurangi erosi tanah: Erosi tanah adalah masalah serius di bidang pertanian, di mana lapisan tanah atas terkikis oleh air atau angin. Konservasi tanah membantu mengurangi erosi dengan mengadopsi praktik pengendalian erosi yang tepat.
-                •	Meningkatkan retensi air: Tanah yang dikonservasi memiliki kemampuan yang lebih baik untuk menahan air, sehingga mengurangi risiko kekeringan dan kekurangan air bagi tanaman.
-                •	Meningkatkan produktivitas pertanian: Dengan menjaga kualitas tanah yang optimal, konservasi tanah membantu meningkatkan produktivitas lahan pertanian dan hasil panen.
-                b.	Mengurangi Erosi Tanah:
-                •	Penanaman penutup tanah: Menanam tanaman penutup seperti rumput atau legum dapat membantu mencegah erosi dengan menahan dan melambatkan aliran air, serta menjaga kestabilan tanah.
-                •	Praktik penanaman berkontur: Menanam dengan mengikuti kontur lahan membantu mengurangi aliran air yang cepat dan erosi yang terkait.
-                •	Penerapan lereng: Dengan membagi lahan menjadi lereng-lereng kecil dengan lereng curam, erosi tanah dapat dikurangi karena aliran air menjadi lebih lambat dan meresap ke dalam tanah.
-                c.	Pemulihan Lahan Terdegradasi:
-                •	Pemupukan organik: Menggunakan pupuk organik, seperti kompos dan pupuk hijau, membantu memperbaiki kesuburan tanah dan memulihkan kualitasnya.
-                •	Rehabilitasi vegetasi: Menanam tumbuhan asli atau tanaman penutup yang tahan terhadap kondisi yang buruk dapat membantu memulihkan lanskap dan memperbaiki kondisi tanah yang terdegradasi.
-                •	Praktik pengelolaan air: Mengelola air dengan bijaksana, seperti mengurangi limpahan air atau menggunakan sistem irigasi yang efisien, membantu dalam pemulihan lahan terdegradasi.
-                d.	Pengelolaan Keberlanjutan Tanah:
-                •	Rotasi tanaman: Mengadopsi rotasi tanaman membantu mengurangi risiko penyakit dan hama, memperbaiki kesuburan tanah, dan menjaga keseimbangan ekosistem pertanian.
-                •	Penggunaan pupuk secara bijaksana: Menggunakan pupuk secara efisien dan mengikuti petunjuk dosis yang tepat membantu menghindari kelebihan pemupukan yang dapat mencemari air tanah atau lingkungan sekitar.
-                •	Pengendalian hama dan penyakit secara terpadu: Mengadopsi pendekatan pengendalian hama dan penyakit secara terpadu, yang mencakup penggunaan metode biologi, fisik, dan bahan kimia yang selektif, membantu menjaga keseimbangan ekosistem dan menghindari kelebihan penggunaan pestisida yang merusak tanah.
-                •	Praktik pertanian organik: Bertanam secara organik menggunakan pupuk dan pestisida organik membantu meminimalkan dampak negatif terhadap tanah dan lingkungan, sambil memproduksi hasil pertanian yang sehat dan ramah lingkungan.
-                •	Konservasi air: Mengelola air dengan efisien, seperti dengan menggunakan teknologi irigasi tetes atau mengumpulkan air hujan, membantu menghemat air dan menjaga keberlanjutan penggunaan sumber daya air dalam pertanian.
-                •	Melalui penerapan praktik konservasi tanah yang tepat, petani dapat menjaga kualitas tanah, mengurangi erosi, memulihkan lahan terdegradasi, dan mengelola tanah secara berkelanjutan. Dengan demikian, pertanian dapat tetap berlanjut secara produktif dan lingkungan dapat terjaga dengan baik untuk generasi yang akan datang.',
-            ],
-            [
-                'judul' => '9.	Inovasi dalam Pertanian', 
+                'judul' => '8.	Inovasi dalam Pertanian', 
                 'gambar' => 'Inovasi dalam Pertanian.jpg',
                 'deskripsi' => 'PerkPelatihan dan pengembangan keterampilan merupakan komponen penting dalam memperkuat kemampuan petani dalam mengelola usaha pertanian dengan baik. Berikut ini adalah beberapa sumber daya dan pelatihan yang dapat disediakan bagi petani untuk mengembangkan keterampilan mereka:
                 1.	Program Pelatihan Pertanian: Program pelatihan pertanian dapat diselenggarakan oleh pemerintah, organisasi non-pemerintah, atau lembaga pendidikan. Pelatihan ini mencakup berbagai topik, mulai dari teknik bertani modern, penggunaan teknologi pertanian, manajemen usaha pertanian, hingga pemasaran produk pertanian. Tujuan dari pelatihan ini adalah untuk memberikan petani dengan pengetahuan dan keterampilan yang diperlukan untuk mengoptimalkan produksi dan mengelola usaha pertanian dengan baik.
@@ -160,16 +136,7 @@ class EdukasiSeeder extends Seeder
                 3.	Kecerdasan Buatan (AI): Teknologi kecerdasan buatan telah memberikan kontribusi besar dalam pertanian modern. Dengan menggunakan algoritma pembelajaran mesin, AI dapat menganalisis data yang besar dan kompleks seperti data cuaca, data tanah, dan data pertumbuhan tanaman. Hal ini memungkinkan AI untuk memberikan rekomendasi yang tepat kepada petani, seperti pengaturan jadwal irigasi yang optimal, pemilihan varietas tanaman yang cocok dengan kondisi lingkungan, dan strategi pengendalian hama yang efektif. Dengan penerapan AI, petani dapat meningkatkan efisiensi produksi dan mengoptimalkan hasil panen.
                 Inovasi-inovasi teknologi ini telah membawa dampak yang signifikan dalam meningkatkan efisiensi dan produktivitas pertanian. Mereka membantu petani menghadapi tantangan dalam pengelolaan sumber daya, meningkatkan kualitas tanaman, mengurangi risiko hama dan penyakit, serta mengoptimalkan hasil panen. Dengan terus berkembangnya teknologi, diharapkan bahwa pertanian akan semakin menjadi sektor yang efisien, berkelanjutan, dan mampu memenuhi kebutuhan pangan yang terus meningkat.',
             ],
-            [
-                'judul' => '10.	Pelatihan dan Keterampilan Bertani', 
-                'gambar' => 'Pelatihan dan Keterampilan Bertani.jpg',
-                'deskripsi' => 'Pelatihan dan pengembangan keterampilan merupakan komponen penting dalam memperkuat kemampuan petani dalam mengelola usaha pertanian dengan baik. Berikut ini adalah beberapa sumber daya dan pelatihan yang dapat disediakan bagi petani untuk mengembangkan keterampilan mereka:
-                1.	Program Pelatihan Pertanian: Program pelatihan pertanian dapat diselenggarakan oleh pemerintah, organisasi non-pemerintah, atau lembaga pendidikan. Pelatihan ini mencakup berbagai topik, mulai dari teknik bertani modern, penggunaan teknologi pertanian, manajemen usaha pertanian, hingga pemasaran produk pertanian. Tujuan dari pelatihan ini adalah untuk memberikan petani dengan pengetahuan dan keterampilan yang diperlukan untuk mengoptimalkan produksi dan mengelola usaha pertanian dengan baik.
-                2.	Kemitraan dan Pertukaran Pengetahuan: Membentuk kemitraan antara petani dengan ahli pertanian, universitas, atau institusi penelitian dapat menjadi sumber daya berharga. Melalui pertukaran pengetahuan dan pengalaman, petani dapat memperoleh wawasan baru tentang teknik bertani terbaru, praktik terbaik, dan inovasi dalam pengelolaan usaha pertanian. Kemitraan ini juga dapat mencakup pelatihan praktis di lapangan dan pengawasan langsung untuk membantu petani dalam mengembangkan keterampilan mereka.
-                3.	Akses ke Bahan Bacaan dan Sumber Daya Online: Menyediakan akses mudah ke bahan bacaan dan sumber daya online adalah cara efektif untuk memberikan pelatihan mandiri kepada petani. Bahan bacaan seperti buku, panduan teknis, dan jurnal ilmiah pertanian dapat membantu petani dalam memperluas pengetahuan mereka tentang berbagai aspek pertanian. Sumber daya online seperti video tutorial, webinar, dan platform e-learning juga dapat digunakan untuk menyediakan pelatihan yang interaktif dan mudah diakses.
-                4.	Pertukaran Pengalaman Petani: Membangun komunitas petani yang saling mendukung dapat menjadi sumber daya berharga dalam mengembangkan keterampilan petani. Pertukaran pengalaman, diskusi, dan kunjungan ke petani yang sukses dapat memberikan inspirasi dan pelajaran berharga. Membentuk kelompok petani atau asosiasi juga dapat menjadi platform untuk berbagi pengetahuan, pemecahan masalah, dan kolaborasi dalam mengembangkan keterampilan.
-                Melalui pelatihan dan pengembangan keterampilan, petani dapat meningkatkan pengetahuan dalam berbagai bidang pertanian dan mengelola usaha pertanian secara lebih efektif. Ini akan membantu dalam menghadapi tantangan yang terus berkembang di sektor pertanian dan meningkatkan produktivitas serta keberlanjutan usaha pertanian mereka.',
-            ]
+
         );
         foreach ($data as $d){
             Edukasi::create([
