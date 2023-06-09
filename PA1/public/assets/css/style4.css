@@ -375,3 +375,47 @@ td.text-center {
 }
 
 
+/* Gaya untuk navbar pada perangkat mobile */
+@media (max-width: 767px) {
+  .navbar ul {
+      display: none;
+  }
+  
+  .navbar-toggle-label {
+      display: block;
+      cursor: pointer;
+      padding: 10px;
+  }
+
+  .navbar-toggle-label span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #000;
+      margin-bottom: 5px;
+  }
+  
+  .navbar-toggle-label span:last-child {
+      margin-bottom: 0;
+  }
+
+  #navbar-toggle:checked ~ ul {
+      display: block;
+  }
+  /* Menyembunyikan checkbox */
+  #navbar-toggle {
+    display: none;
+}
+}
+
+/* Gaya untuk navbar pada perangkat desktop */
+@media (min-width: 768px) {
+  .navbar ul {
+      display: flex;
+  }
+  #navbar-toggle {
+    display: none;
+}
+}
+
+

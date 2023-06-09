@@ -3,7 +3,13 @@
         <h1 class="logo me-auto"><a href="{{ route('Beranda') }}">SiTani</a></h1>
 
         <nav id="navbar" class="navbar">
-            <ul>
+            <input type="checkbox" id="navbar-toggle">
+            <label for="navbar-toggle" class="navbar-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="navbar-menu">
                 <li><a class="nav-link scrollto" href="{{ route('Beranda') }}">Beranda</a></li>
                 <li><a class="nav-link scrollto" href="{{ route('edukasi.index') }}">Edukasi</a></li>
                 <li><a class="nav-link scrollto" href="{{ url('barang') }}">Barang</a></li>
@@ -16,7 +22,7 @@
                 <li><a class="nav-link scrollto" href="{{ route('proyekTani.index') }}">Proyek Tani</a></li>
                 <li><a class="nav-link scrollto" href="{{ route('kontak') }}">Kontak</a></li>
             </ul>
-            <div>
+            <div class="navbar-icons">
                 <ul>
                     <li class="nav-item dropdown">
                         @php
@@ -55,7 +61,6 @@
                         </div>
                     </li>
                     
-
                     <li class="nav-item dropdown">
                         @if (Auth::user())
                             <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
